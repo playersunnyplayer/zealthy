@@ -1,0 +1,940 @@
+.ratingHeader {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.ratingHeader i:last-child {
+    margin: 0 5px 0 0;
+}
+
+.ratingHeader small {
+    color: #c00;
+    text-align: right;
+}
+
+.ratingHeader i {
+    color: #FF9900;
+}
+
+.zoomBoxRow {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.zoomBoxWrap {
+    width: 40%;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin: 0 0 auto;
+}
+
+.xzoom {
+    border-radius: 5px;
+    box-shadow: none;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    width: 80% !important;
+    order: 2;
+}
+
+.xzoom-thumbs {
+    gap: 10px;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    order: 1;
+}
+
+.xzoom-gallery {
+    width: 80px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.rightPDPcontent {
+    padding: 0 0 0 50px;
+    width: 60%;
+    position: relative;
+    z-index: 0;
+}
+
+.priceSecRow {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.priceSec {
+    display: flex;
+    align-items: center;
+}
+
+.priceSec sup {
+    font-size: 18px;
+    margin-right: 6px;
+    font-weight: 600;
+    color: #E70F14;
+    top: -5px;
+}
+
+.productAmt {
+    color: #E70F14;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    margin: 0 10px 0 0;
+}
+
+.offer-discount {
+    color: #E70F14;
+}
+
+.productPriceDetails {
+    padding: 6px 0 0;
+}
+
+.productPriceDetails small {
+    position: relative;
+    top: -5px;
+    color: #000;
+}
+
+.discountBox {
+    position: relative;
+    padding: 10px 120px 10px 14px;
+    font-weight: 700;
+}
+
+.discountBox:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(231 15 20 / 5%);
+    border-radius: 5px;
+}
+
+.gift-box-icon {
+    position: absolute;
+    right: 10px;
+    top: -15px;
+}
+
+.discountBox p {
+    font-style: italic;
+    color: #000;
+    font-size: 13px;
+}
+
+.discountBox small {
+    font-size: 10px;
+    color: #E70F14;
+    width: 100%;
+    display: flex;
+    font-weight: 700;
+}
+
+.discountBox .tnc {
+    color: #666;
+    margin: 0 0 0 auto;
+}
+
+.personalizeExperienceSec .thumb figure {
+    margin: 0 0 10px;
+}
+.personalizeExperienceSec .productName {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+.personalizeExperienceSec .price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 6px 0 0;
+}
+
+.allAddons {
+    border: 1px solid rgba(231, 15, 20, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+}
+
+.allAddons small {
+    color: #E70F14;
+}
+
+.allAddons:hover {
+    background: rgb(231 15 20 / 5%);
+}
+
+.personalizeExperienceSec {
+    margin: 0 0 30px;
+}
+
+.personalizeExperienceSec .owl-nav {
+    top: -56px;
+    right: -50px;
+}
+
+.personalizeExperienceSec .owl-nav.disabled {
+    display: flex;
+}
+
+.personalizeExperienceSec .thumbWrap .thumb {
+    width: 100%;
+}
+
+.pinFormAreaSec {
+    margin: 0 0 30px;
+}
+
+.pinFormAreaSec .inputGroup {
+    padding: 0 10px 0 0
+}
+
+.pinFormAreaSec input {
+    width: 100%;
+}
+
+.inputPin {
+    width: 30%;
+}
+
+.inputDate {
+    width: 34%;
+}
+
+.pinFormAreaSec .btn-primary {
+    width: 36%;
+}
+
+.inputDate input {}
+
+.smileRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.smileCol {
+    display: flex;
+    align-items: center;
+    margin: 0 50px 20px 0;
+}
+
+.smileCol img {
+    height: 44px;
+    margin: 0 10px 0 0;
+}
+
+.smileCol small {
+    color: #C00;
+}
+
+.guaranted {
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    margin: 10px 0 0;
+}
+
+.smileColRight {
+    position: relative;
+    top: 8px;
+}
+
+.smileColRight .thumb {
+    display: flex;
+}
+
+.smileColRight .thumb figure {
+    width: 30px;
+}
+
+.descriptionContainer {
+    position: relative;
+    margin: 50px 0 0;
+    background: linear-gradient(rgb(231 15 20 / 0.05), transparent);
+}
+
+.descriptionContainer .container {}
+
+.descriptionContainer .container::before {
+    content: "";
+    position: absolute;
+    background: url(../images/curve.svg) no-repeat;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.descriptionSec {
+    padding: 60px 0 0;
+}
+
+.nav-item {
+    margin: 20px 0 0;
+}
+
+.nav-pills {
+    border-bottom: solid 1px #C4C4C4;
+}
+
+.nav-pills .nav-link {
+    background: none;
+    border: 0;
+    border-bottom: solid 3px transparent;
+    font-size: 18px;
+    font-weight: 700;
+    color: #606060;
+    padding: 0 0 6px;
+    cursor: pointer;
+    margin: 0 50px 0 0;
+}
+
+.nav-pills .nav-link:focus {
+    outline: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #C00;
+    background: none;
+    border-color: #C00;
+    border-radius: 0;
+}
+
+.tab-content {
+    padding: 20px 50px 0 0;
+}
+
+.tab-content h4 {
+    margin: 0 0 20px;
+}
+
+.productDetailsThumbWrap {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 40px;
+}
+
+.productDetailsThumb {
+    align-items: center;
+    display: flex;
+    margin: 0 50px 0 0;
+    color: #000;
+    font-weight: 700;
+}
+
+.productDetailsThumb figure {
+    width: 60px;
+    border-radius: 100%;
+    overflow: hidden;
+    margin: 0 14px 0 0;
+}
+
+.colum {
+    margin: 0 0 40px;
+}
+
+.whyTogetherSec {
+    background: linear-gradient(rgb(231 15 20 / 5%), transparent);
+    padding: 70px 20px 0;
+}
+
+.whyTogetherSec h3 {
+    margin: 0 0 40px;
+}
+
+.whyTogetherThumb {
+    align-items: center;
+    display: flex;
+    margin: 0 0 50px 0;
+    color: #000;
+}
+
+.whyTogetherThumb figure {
+    width: 60px;
+    overflow: hidden;
+    margin: 0 14px 0 0;
+    position: relative;
+}
+
+.whyTogetherThumb figure:after {
+    content: "";
+    background: rgba(231, 15, 20, 0.05);
+    border: solid 1px rgba(231, 15, 20, 0.20);
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.weDeliverSec {
+    padding: 70px 0;
+    color: #000;
+    text-align: center;
+}
+
+.weDeliverSec h3 {
+    margin: 0 0 40px;
+}
+
+.ovelThumbWrap {
+    text-align: center;
+    display: flex;
+    color: #666;
+}
+
+.ovelThumbWrap figure {
+    position: relative;
+    margin: 0 0 20px;
+    height: 220px;
+}
+
+.ovelThumb {}
+
+.ovelImg {
+    width: 250px;
+    animation: rotate 10s linear infinite;
+}
+
+.ovelPic {
+    position: absolute;
+    bottom: 20px;
+}
+
+.ovel-line {
+    width: 200px;
+}
+
+.ovelThumbWrap .heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #444;
+    margin: 0 0 5px;
+}
+
+.relatedServicesSec {
+    background: rgb(231 15 20 / 5%);
+    padding: 60px 0;
+}
+
+.relatedServicesSec .row {}
+
+.relatedServicesSec h3 {
+    margin: 0 0 40px;
+    text-align: center;
+}
+
+.productThumb {
+    margin: 0 0 20px
+}
+
+.productThumb figure img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.productThumbContentArea {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px #EEE;
+    margin: -20px 0 0;
+    z-index: 2;
+    position: relative;
+    padding: 20px;
+    transition: all ease .5s;
+}
+
+.productThumb .heading {
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0 0 12px;
+}
+
+.productThumbContentArea .priceSec {
+    border-top: solid 1px #eee;
+    margin: 20px -20px 0;
+    padding: 20px 20px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.productThumb:hover .productThumbContentArea {
+    margin: -50px 0 0;
+}
+
+.productThumb .arrow {
+    bottom: 14px;
+}
+
+.productThumb:hover .arrow {
+    background: #ddd;
+    right: 5px;
+}
+
+.fAQSec {
+    padding: 60px 0;
+    border-bottom: solid 1px #ECECEC;
+}
+
+.ratingNum {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.customerReviewsSec {
+    padding: 60px 0;
+    color: #161616;
+}
+
+.customerReviewsSec h3 {
+    margin: 0 0 50px;
+}
+
+.totalRating {
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.customerReviewsSec .btn-outline-secondary {
+
+    margin: 0 0 30px;
+}
+
+.starsGroupWrap {}
+
+.starsGroupRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    margin: 0 0 10px;
+}
+
+.starsGroupRow .starsGroup {
+    font-size: 13px;
+}
+
+.starsGroupRow .progress {
+    height: 7px;
+    width: 54%;
+    border-radius: 10px;
+    background: #D9D9D9;
+}
+
+.starsGroupRow .progress-bar {
+    background: #000;
+}
+
+.sortBySec {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.sortBySec label {
+    margin: 0 10px 0 0;
+}
+
+.sortBySec select {
+    padding: 0 20px 0 10px;
+}
+
+.firstRow {
+    display: flex;
+    margin: 0 0 20px;
+}
+
+.firstRow .name {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.firstRow .date {
+    margin: auto 0 auto auto;
+}
+
+.firstRow .alphabet {
+    border: solid 1px #E70F14;
+    background: rgba(231, 15, 20, 0.05);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 20px 0 0;
+    color: #E70F14;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.reviewCommentThumb {
+    padding: 30px 0;
+}
+
+.reviewCommentThumb:not(:last-child) {
+    border-bottom: solid 1px #ddd;
+}
+
+.reviewCommentThumb p {
+    margin: 0 0 20px
+}
+
+.revewPics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.revewPics img {
+    width: 70px;
+    max-height: 70px;
+    border-radius: 5px;
+}
+
+.helpfulSec {
+    display: flex;
+    gap: 15px;
+}
+
+.playStorePromotionSec {
+    position: relative;
+    padding: 100px 0 0;
+    background: rgb(231 15 20 / 0.05);
+}
+
+.playStorePromotionSec .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playStorePromotionSec .container::before {
+    content: "";
+    position: absolute;
+    background: url(../images/curve.svg) no-repeat;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.playStorePromotionSec .leftSec {
+    padding: 50px 0 0 20%;
+}
+
+.playStorePromotionSec .get {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #E70F14;
+    margin: 0 0 14px;
+}
+
+.playStorePromotionSec .onYour {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.playStorePromotionSec p small {}
+
+.storeWrap {
+    margin: 20px 0 0;
+    display: flex;
+    gap: 10px;
+    position: relative;
+}
+
+.storeWrap .planeSketch {
+    position: absolute;
+    left: -65%;
+}
+
+.storeWrap .appIcon {}
+
+.phoneHandWrap {
+    position: relative;
+}
+
+.phoneHandWrap::after {
+    content: "";
+    width: 160px;
+    height: 160px;
+    background: #FDE8E8;
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.phoneHand {}
+
+.blogSec {
+    padding: 60px 0;
+}
+
+.blogSec h3 {
+    margin: 0 0 40px;
+    text-align: center;
+}
+
+.blogThumb {
+    border-radius: 10px;
+    background: #FFF;
+    padding: 0 14px;
+    transition: all ease .2s;
+    box-shadow: 0px 4px 10px 0px #EEE;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogThumb:hover {
+    box-shadow: 0px 4px 20px 0px #CCC;
+}
+
+.blogThumb figure {
+    margin: 0 -14px 20px;
+}
+
+.blogThumb .heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+
+.blogThumb .para {
+    margin: 0 0 10px;
+}
+
+.blogThumb .read {}
+
+.blogThumb .bottomSec {
+    border-top: solid 1px #eee;
+    padding: 16px 14px;
+    margin: auto -14px 0;
+    display: flex;
+    position: relative;
+}
+
+.blogThumb .date {
+    margin: 0 20px 0 0;
+}
+
+.blogThumb .name {
+    color: #000;
+}
+
+.blogThumb .arrow {
+    bottom: 14px;
+    top: 10px;
+}
+
+.blogThumb:hover .arrow {
+    background: #ddd;
+    right: 5px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .pinFormAreaSec .inputGroup {
+        width: 49%;
+        padding: 0;
+    }
+
+    .pinFormAreaSec .btn-primary {
+        width: 100% !important;
+        margin: 10px 0 0;
+    }
+
+    .stickyMenuSec .rightSec {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .stickyMenuSec .btn-primary {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .personalizeExperienceSec .thumbWrap .thumb {
+    }
+
+    .customerReviewsSec .row {
+        flex-direction: column;
+    }
+
+    .customerReviewsSec .col-md-3,
+    .customerReviewsSec .col-md-9 {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .sortBySec {
+        margin: 20px 0 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .zoomBoxWrap,
+    .rightPDPcontent {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .xzoom {
+    width: 100% !important;
+    order: 2;
+    }
+    .xzoom-thumbs {
+    order: 2;
+    flex-direction: row;
+    width: auto;
+    }
+
+    .rightPDPcontent {
+        padding: 0
+    }
+
+    .stickyMenuSec .container {
+        padding: 0 20px;
+    }
+
+    .stickyMenuSec figure,
+    .stickyMenuSec .contentSec,
+    .stickyMenuSec .addon,
+    .stickyMenuSec .cost {
+        display: none;
+    }
+
+    .stickyMenuSec .rightSec {
+        width: 100%;
+    }
+
+    .stickyMenuSec .rightSec .btn {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        display: table;
+    }
+
+    .descriptionSec {
+        padding: 0;
+    }
+
+    .ovelThumbWrap {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .ovel-line {
+        display: none;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 16px;
+        padding: 0 0 4px;
+        margin: 0 20px 0 0;
+    }
+
+    .playStorePromotionSec {
+        padding: 20px 0 70px;
+        text-align: center;
+    }
+
+    .playStorePromotionSec .container {
+        justify-content: center;
+    }
+
+    .playStorePromotionSec .leftSec {
+        padding: 50px 0 0 0;
+    }
+
+    .phoneHandWrap {
+        display: none;
+    }
+
+    .blogSec .col-md-4 {
+        margin: 0 0 20px;
+    }
+
+    .ratingHeader {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .whyTogetherSec {
+        padding: 20px;
+    }
+
+    .whyTogetherSec h3 {
+        margin: 0 0 20px;
+    }
+
+    .whyTogetherThumb {
+        margin: 0 0 20px 0;
+    }
+
+    .weDeliverSec {
+        padding: 0 0 40px;
+    }
+
+    .relatedServicesSec {
+        padding: 40px 0;
+    }
+
+    .fAQSec {
+        padding: 40px 0 30px;
+    }
+
+    .fAQSec .card-header h2 {
+        margin: 0 !important;
+    }
+
+    .customerReviewsSec {
+        padding: 30px 0 0;
+    }
+
+    .customerReviewsSec h3 {
+        margin: 0 0 20px;
+    }
+    .tab-content {
+        padding: 20px 0 0 0;
+        /* overflow-y: auto; */
+    }
+    .personalizeExperienceSec .owl-nav {
+        right: 0px;
+    }
+}
