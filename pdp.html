@@ -667,9 +667,8 @@
 		<div class="container">
 			<h3>Related Services</h3>
 
-			<div class="row">
-				<div class="col-md-3 productThumb wow animate__animated animate__fadeInUp" data-wow-duration="2s"
-					data-wow-delay="0.2s">
+			<div class="row owl-carousel relatedServices-carousel">
+				<div class="productThumb">
 					<a href="#">
 						<figure>
 							<img src="images/product-img.png" alt="">
@@ -697,8 +696,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-3 productThumb wow animate__animated animate__fadeInUp" data-wow-duration="2s"
-					data-wow-delay="0.4s">
+				<div class="productThumb">
 					<a href="#">
 						<figure>
 							<img src="images/product-img.png" alt="">
@@ -726,8 +724,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-3 productThumb wow animate__animated animate__fadeInUp" data-wow-duration="2s"
-					data-wow-delay="0.6s">
+				<div class="productThumb">
 					<a href="#">
 						<figure>
 							<img src="images/product-img.png" alt="">
@@ -755,8 +752,147 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-md-3 productThumb wow animate__animated animate__fadeInUp" data-wow-duration="2s"
-					data-wow-delay="0.8s">
+				<div class="productThumb">
+					<a href="#">
+						<figure>
+							<img src="images/product-img.png" alt="">
+						</figure>
+
+						<div class="productThumbContentArea">
+							<p class="heading">Birthday Cheer Balloon Balloon Balloon</p>
+
+							<div class="starsGroup">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+
+								<small>(1 rating)</small>
+							</div>
+
+							<div class="priceSec">
+								<div class="price">₹1399</div>
+								<div class="arrow">
+									<i class="fa fa-angle-right"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="productThumb">
+					<a href="#">
+						<figure>
+							<img src="images/product-img.png" alt="">
+						</figure>
+
+						<div class="productThumbContentArea">
+							<p class="heading">Birthday Cheer Balloon Balloon Balloon</p>
+
+							<div class="starsGroup">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+
+								<small>(1 rating)</small>
+							</div>
+
+							<div class="priceSec">
+								<div class="price">₹1399</div>
+								<div class="arrow">
+									<i class="fa fa-angle-right"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="productThumb">
+					<a href="#">
+						<figure>
+							<img src="images/product-img.png" alt="">
+						</figure>
+
+						<div class="productThumbContentArea">
+							<p class="heading">Birthday Cheer Balloon Balloon Balloon</p>
+
+							<div class="starsGroup">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+
+								<small>(1 rating)</small>
+							</div>
+
+							<div class="priceSec">
+								<div class="price">₹1399</div>
+								<div class="arrow">
+									<i class="fa fa-angle-right"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="productThumb">
+					<a href="#">
+						<figure>
+							<img src="images/product-img.png" alt="">
+						</figure>
+
+						<div class="productThumbContentArea">
+							<p class="heading">Birthday Cheer Balloon Balloon Balloon</p>
+
+							<div class="starsGroup">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+
+								<small>(1 rating)</small>
+							</div>
+
+							<div class="priceSec">
+								<div class="price">₹1399</div>
+								<div class="arrow">
+									<i class="fa fa-angle-right"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="productThumb">
+					<a href="#">
+						<figure>
+							<img src="images/product-img.png" alt="">
+						</figure>
+
+						<div class="productThumbContentArea">
+							<p class="heading">Birthday Cheer Balloon Balloon Balloon</p>
+
+							<div class="starsGroup">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+
+								<small>(1 rating)</small>
+							</div>
+
+							<div class="priceSec">
+								<div class="price">₹1399</div>
+								<div class="arrow">
+									<i class="fa fa-angle-right"></i>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="productThumb">
 					<a href="#">
 						<figure>
 							<img src="images/product-img.png" alt="">
@@ -1378,10 +1514,32 @@
 		$('.addons-carousel').owlCarousel({
 			margin: 10,
 			loop: true,
-			autoPlay: 100,
 			responsiveClass: true,
 			dots: false,
 			nav: true,
+			autoplay: true,
+			autoplayTimeout: 3000,
+			responsive: {
+				0: {
+					items: 2,
+				},
+				600: {
+					items: 3,
+				},
+				1000: {
+					items: 4,
+				}
+			}
+		})
+
+		$('.relatedServices-carousel').owlCarousel({
+			margin: 20,
+			loop: true,
+			responsiveClass: true,
+			dots: false,
+			nav: false,
+			autoplay: true,
+			autoplayTimeout: 3000,
 			responsive: {
 				0: {
 					items: 2,
