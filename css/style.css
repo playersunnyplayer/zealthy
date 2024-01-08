@@ -606,6 +606,15 @@ footer h3 {
   padding: 0 10px;
 }
 
+.experiencesPopup li {
+  margin: 0 0 10px;
+}
+
+.experiencesPopup li a:hover {
+  color: #E70F14;
+  text-decoration: underline;
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);
