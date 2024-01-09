@@ -147,7 +147,9 @@
 }
 
 .personalizeExperienceSec .thumb figure {
-    margin: 0 0 10px;
+    margin: 0 auto 10px;
+    height: 70px;
+    width: 70px;
 }
 .personalizeExperienceSec .productName {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
 

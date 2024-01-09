@@ -615,6 +615,35 @@ footer h3 {
   text-decoration: underline;
 }
 
+.btnCircle {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  background: #fff;
+  transition: all ease .2s;
+  position: absolute;
+  bottom: 14px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.addBtnCircle {
+  border-color: #44aa00;
+}
+
+.removeBtnCircle {
+  border-color: #E70F14;
+}
+
+.thumb:hover .btnCircle {
+  height: 24px;
+  width: 24px;
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);
