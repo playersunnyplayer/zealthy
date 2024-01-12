@@ -224,8 +224,6 @@
     width: 36%;
 }
 
-.inputDate input {}
-
 .smileRow {
     display: flex;
     flex-wrap: wrap;
@@ -272,8 +270,6 @@
     margin: 50px 0 0;
     background: linear-gradient(rgb(231 15 20 / 0.05), transparent);
 }
-
-.descriptionContainer .container {}
 
 .descriptionContainer .container::before {
     content: "";
@@ -413,8 +409,6 @@
     height: 220px;
 }
 
-.ovelThumb {}
-
 .ovelImg {
     width: 250px;
     animation: rotate 10s linear infinite;
@@ -440,8 +434,6 @@
     background: rgb(231 15 20 / 5%);
     padding: 60px 0;
 }
-
-.relatedServicesSec .row {}
 
 .relatedServicesSec h3 {
     margin: 0 0 40px;
@@ -524,11 +516,8 @@
 }
 
 .customerReviewsSec .btn-outline-secondary {
-
     margin: 0 0 30px;
 }
-
-.starsGroupWrap {}
 
 .starsGroupRow {
     display: flex;
@@ -669,8 +658,6 @@
     margin: 0 0 10px;
 }
 
-.playStorePromotionSec p small {}
-
 .storeWrap {
     margin: 20px 0 0;
     display: flex;
@@ -682,8 +669,6 @@
     position: absolute;
     left: -65%;
 }
-
-.storeWrap .appIcon {}
 
 .phoneHandWrap {
     position: relative;
@@ -701,8 +686,6 @@
     z-index: -1;
     opacity: 0.8;
 }
-
-.phoneHand {}
 
 .blogSec {
     padding: 60px 0;
@@ -741,8 +724,6 @@
 .blogThumb .para {
     margin: 0 0 10px;
 }
-
-.blogThumb .read {}
 
 .blogThumb .bottomSec {
     border-top: solid 1px #eee;
@@ -840,6 +821,103 @@
     margin: 0 3px 0 0;
 }
 
+.stickyMenuWrapSec {
+    display: unset;
+    position: relative;
+    z-index: 31;
+  }
+  
+  .stickyMenuSec {
+    background: #FEF3F3;
+    box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.25);
+    display: block;
+    padding: 10px 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    transition: all ease .2s;
+  }
+  
+  .stickyMenuSec .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .stickyMenuSec figure {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    margin: auto 20px auto 0;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+  }
+  
+  .stickyMenuSec .contentSec {
+    width: 40%;
+  }
+  
+  .stickyMenuSec .contentSec h3,
+  .stickyMenuSec .contentSec p {
+    white-space: nowrap;
+    margin: 0;
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .stickyMenuSec .addon {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .stickyMenuSec .addon label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 5px;
+  }
+  
+  .stickyMenuSec .addedIcon {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: solid 1px #ECECEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 0 0 10px;
+    font-size: 17px;
+    padding: 0;
+  }
+  
+  .stickyMenuSec .rightSec {
+    margin: 0 0 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .stickyMenuSec .cost {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    color: #E70F14;
+    white-space: nowrap;
+    margin: 0 30px 0 0;
+  }
+  
+  .stickyMenuSec .btn-primary {
+    margin: 0 0 0 auto;
+    width: 300px;
+    max-width: 300px;
+  }
+  
+  .stickyMenuSec.fixed {
+    position: fixed;
+    max-width: 100%;
+  }
+  
 
 @media only screen and (max-width: 1024px) {
     .pinFormAreaSec .inputGroup {

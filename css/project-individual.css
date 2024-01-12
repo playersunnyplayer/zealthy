@@ -129,103 +129,6 @@
   height: 60px;
 } */
 
-.stickyMenuWrapSec {
-  display: unset;
-  position: relative;
-  z-index: 31;
-}
-
-.stickyMenuSec {
-  background: #FEF3F3;
-  box-shadow: 0px 0px 20px 0px rgba(255, 0, 0, 0.25);
-  display: block;
-  padding: 10px 0;
-  bottom: 0;
-  /* required */
-  z-index: 2;
-  width: 100%;
-  transition: all ease .2s;
-}
-
-.stickyMenuSec .container {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.stickyMenuSec figure {
-  height: 50px;
-  width: 50px;
-  min-width: 50px;
-  margin: auto 20px auto 0;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.10);
-}
-
-.stickyMenuSec .contentSec {
-  width: 40%;
-}
-
-.stickyMenuSec .contentSec h3,
-.stickyMenuSec .contentSec p {
-  white-space: nowrap;
-  margin: 0;
-  width: 80%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.stickyMenuSec .addon {
-  font-size: 18px;
-  font-weight: 700;
-}
-
-.stickyMenuSec .addon label {
-  display: block;
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0 0 5px;
-}
-
-.stickyMenuSec .addedIcon {
-  width: 40px;
-  height: 40px;
-  background: #fff;
-  border: solid 1px #ECECEC;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  margin: 0 0 0 10px;
-  font-size: 17px;
-  padding: 0;
-}
-
-.stickyMenuSec .rightSec {
-  margin: 0 0 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.stickyMenuSec .cost {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  color: #E70F14;
-  white-space: nowrap;
-  margin: 0 30px 0 0;
-}
-
-.stickyMenuSec .btn-primary {
-  margin: 0 0 0 auto;
-  width: 300px;
-  max-width: 300px;
-}
-
-.stickyMenuSec.fixed {
-  position: fixed;
-  max-width: 100%;
-}
 
 /* .amenitiesSec {
   background: url("../images/amenities-bg.png");
@@ -425,7 +328,7 @@
   max-width: initial;
 } */
 
-.zoomHover {
+/* .zoomHover {
   background: #fcc508;
   display: flex;
   position: absolute;
@@ -451,7 +354,7 @@
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-}
+} */
 
 .brandLogosWrap {
   display: flex;
