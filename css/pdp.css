@@ -151,7 +151,12 @@
     height: 70px;
     width: 70px;
 }
-.personalizeExperienceSec .productName {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+.personalizeExperienceSec .productName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 
 .personalizeExperienceSec .price {
     font-size: 18px;
@@ -162,7 +167,7 @@
 
 .allAddons {
     border: 1px solid rgba(231, 15, 20, 0.10);
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -765,6 +770,76 @@
     right: 5px;
 }
 
+.allAddonsPopup .thumb {
+    width: 170px;
+    margin: 0;
+}
+
+.allAddonsPopup .modal-body {
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.allAddonsPopup .thumbWrap {
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.allAddonsPopup .modal-footer {
+    justify-content: flex-start;
+    display: none;
+}
+
+.allAddonsPopup .modal-footer h4 {
+    margin: 0 0 10px
+}
+
+.allAddonsPopup .modal-footer .close {
+    height: 18px;
+    margin: -35px 0 0;
+}
+
+.allAddonsPopup .modal-footer .inputGroup {
+    margin: 0 10px 0 0;
+    width: 100%;
+}
+
+.allAddonsPopup .modal-footer .block {
+    width: 100%;
+}
+
+.allAddonsPopup .modal-footer .row:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.allAddonsPopup .inputNumGroup {
+    margin: 0;
+}
+
+.allAddonsPopup .modal-footer .btn-primary {
+    margin: 0;
+}
+
+.modal-footer label.block {
+    margin: 0;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modal-footer .inputPin input {
+    height: 50px;
+}
+
+.radioBtnWrap {
+    margin: 2px 0 0;
+}
+
+.radioBtnWrap input[type="radio"] {
+    height: auto;
+    margin: 0 3px 0 0;
+}
+
 
 @media only screen and (max-width: 1024px) {
     .pinFormAreaSec .inputGroup {
@@ -788,9 +863,6 @@
 }
 
 @media only screen and (max-width: 980px) {
-    .personalizeExperienceSec .thumbWrap .thumb {
-    }
-
     .customerReviewsSec .row {
         flex-direction: column;
     }
@@ -807,6 +879,8 @@
     }
 }
 
+@media only screen and (min-width: 768px) {}
+
 @media only screen and (max-width: 767px) {
 
     .zoomBoxWrap,
@@ -816,13 +890,14 @@
     }
 
     .xzoom {
-    width: 100% !important;
-    order: 2;
+        width: 100% !important;
+        order: 2;
     }
+
     .xzoom-thumbs {
-    order: 2;
-    flex-direction: row;
-    width: auto;
+        order: 2;
+        flex-direction: row;
+        width: auto;
     }
 
     .rightPDPcontent {
@@ -835,9 +910,19 @@
 
     .stickyMenuSec figure,
     .stickyMenuSec .contentSec,
-    .stickyMenuSec .addon,
     .stickyMenuSec .cost {
         display: none;
+    }
+
+    .stickyMenuSec .addon {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 0 0 10px;
+    }
+
+    .stickyMenuSec .addon label {
+        margin: 0
     }
 
     .stickyMenuSec .rightSec {
@@ -932,11 +1017,22 @@
     .customerReviewsSec h3 {
         margin: 0 0 20px;
     }
+
     .tab-content {
         padding: 20px 0 0 0;
         /* overflow-y: auto; */
     }
+
     .personalizeExperienceSec .owl-nav {
         right: 0px;
+    }
+
+    .allAddonsPopup .modal-footer .inputNumGroup {
+        max-width: 160px;
+        margin: 0 0 10px;
+    }
+
+    .allAddonsPopup .modal-footer .col-md-4:not(:last-child) {
+        margin: 0 0 10px
     }
 }

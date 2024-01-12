@@ -612,7 +612,7 @@
 					<label name="addon" for="addon">Addons Added</label>
 					<div class="d-flex align-items-center">
 						2
-						<button class="btn addedIcon">+</button>
+						<button class="btn addedIcon" data-toggle="modal" data-target="#allAddonsPopup">+</button>
 					</div>
 				</div>
 
@@ -1434,7 +1434,7 @@
 			© copyright 2023-24, nikunj software technologies private limited
 		</div>
 
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+		<button onclick="topFunction()" id="goToTop" title="Go to top"><i class="fa fa-angle-up"></i></button>
 	</footer>
 
 	<!-- disclaimer Model -->
@@ -1536,6 +1536,208 @@
         </div>
     </div>
 
+	<div class="modal fade allAddonsPopup" id="allAddonsPopup" tabindex="-1" role="dialog" aria-labelledby="allAddonsPopupLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 1200px;" role="document">
+            <div class="modal-content verticalText_model">
+				<div class="modal-body">
+					<h3>All Addons
+						<img src="images/close-icon.svg" class="close" data-dismiss="modal" aria-label="Close" alt="">
+					</h3>
+
+					<div class="thumbWrap personalizeExperienceSec">
+						<a href="#" class="thumb">
+							<figure>
+								<img src="images/cake.png" alt="">
+							</figure>
+
+							<div class="productName">Half kg Cake</div>
+							<div class="price">₹1000</div>
+
+							<div class="arrow">
+								<i class="fa fa-angle-right"></i>
+							</div>
+						</a>
+
+						<div class="thumb">
+							<figure>
+								<img src="images/candle.png" alt="">
+							</figure>
+
+							<div class="productName">Candles and rose petals</div>
+							<div class="price">₹600</div>
+
+							<button class="btnCircle addBtnCircle" onclick="personalizationDetails()">+</button>
+						</div>
+
+						<div class="thumb">
+							<figure>
+								<img src="images/princess.jpg" alt="">
+							</figure>
+
+							<div class="productName">Happy Birthday Princess Crown Foil Balloon</div>
+							<div class="price">₹600</div>
+
+							<button class="btnCircle removeBtnCircle">-</button>
+						</div>
+
+						<a href="#" class="thumb">
+							<figure>
+								<img src="images/cake.png" alt="">
+							</figure>
+
+							<div class="productName">Half kg Cake</div>
+							<div class="price">₹1000</div>
+
+							<div class="arrow">
+								<i class="fa fa-angle-right"></i>
+							</div>
+						</a>
+
+						<a href="#" class="thumb">
+							<figure>
+								<img src="images/cake.png" alt="">
+							</figure>
+
+							<div class="productName">Half kg Cake</div>
+							<div class="price">₹1000</div>
+
+							<div class="arrow">
+								<i class="fa fa-angle-right"></i>
+							</div>
+						</a>
+
+						<a href="#" class="thumb">
+							<figure>
+								<img src="images/cake.png" alt="">
+							</figure>
+
+							<div class="productName">Half kg Cake</div>
+							<div class="price">₹1000</div>
+
+							<div class="arrow">
+								<i class="fa fa-angle-right"></i>
+							</div>
+						</a>
+
+						<a href="#" class="thumb">
+							<figure>
+								<img src="images/cake.png" alt="">
+							</figure>
+
+							<div class="productName">Half kg Cake</div>
+							<div class="price">₹1000</div>
+
+							<div class="arrow">
+								<i class="fa fa-angle-right"></i>
+							</div>
+						</a>
+
+						<a href="#" class="thumb">
+							<figure>
+								<img src="images/cake.png" alt="">
+							</figure>
+
+							<div class="productName">Half kg Cake</div>
+							<div class="price">₹1000</div>
+
+							<div class="arrow">
+								<i class="fa fa-angle-right"></i>
+							</div>
+						</a>
+
+						<a href="#" class="thumb">
+							<figure>
+								<img src="images/cake.png" alt="">
+							</figure>
+
+							<div class="productName">Half kg Cake</div>
+							<div class="price">₹1000</div>
+
+							<div class="arrow">
+								<i class="fa fa-angle-right"></i>
+							</div>
+						</a>
+						<a href="#" class="thumb allAddons">
+							<small>Click here to</small>
+							<div>Add more Addons</div>
+						</a>
+					</div>
+                </div>
+				<div class="modal-footer" id="personalizationDetailsSection">
+					<div class="block">
+						<h4>Enter personalization details</h4>
+						<img src="images/close-icon.svg" class="close" onclick="closePersonalizationDetailsSection()" aria-label="Close" alt="">
+
+						<div class="row">
+							<div class="col-md-4">
+								<div class="inputGroup inputPin">
+									<input class="balloon" id="pin" type="text" value="110059"
+										placeholder="Enter Pin Code" />
+									<label name="pin" for="pin">Enter your Name</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="inputGroup inputPin">
+									<input class="balloon" id="pin" type="text" value="110059"
+										placeholder="Enter Pin Code" />
+									<label name="pin" for="pin">Enter your Name</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="inputGroup inputPin">
+									<input class="balloon" id="pin" type="text" value="110059"
+										placeholder="Enter Pin Code" />
+									<label name="pin" for="pin">Enter your Name</label>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-4">
+								<div class="inputGroup inputPin">
+									<input class="balloon" id="pin" type="text" value="110059"
+										placeholder="Enter Pin Code" />
+									<label name="pin" for="pin">Enter your Name</label>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="row">
+									<div class="col-md-6">
+										<label name="quantity" class="block" for="quantity">Add quantity</label>
+										<div class="inputNumGroup">
+											<button class="btn btn-outline-secondary">-</button>
+											<input type="number" id="quantity" value="">
+											<button class="btn btn-outline-secondary">+</button>
+										</div>
+									</div>
+
+									<div class="col-md-6">
+										<label name="Radio" class="block" for="Radio">Radio</label>
+										<div class="inputGroup block radioBtnWrap">
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+												<label class="form-check-label" for="inlineRadio1">1</label>
+											</div>
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+												<label class="form-check-label" for="inlineRadio2">2</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<button type="button" class="btn btn-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -1560,179 +1762,7 @@
 
 	<!-- XZOOM JQUERY PLUGIN  -->
 	<script type="text/javascript" src="js/xzoom.min.js"></script>
-
-	<script>
-		$('.datepicker').datepicker({
-			format: "dd/mm/yyyy",
-			autoHide: true
-		});
-
-		$('.addons-carousel').owlCarousel({
-			margin: 10,
-			loop: true,
-			responsiveClass: true,
-			dots: false,
-			nav: true,
-			autoplay: true,
-			autoplayTimeout: 3000,
-			responsive: {
-				0: {
-					items: 2,
-				},
-				600: {
-					items: 3,
-				},
-				1000: {
-					items: 4,
-				}
-			}
-		})
-
-		$('.relatedServices-carousel').owlCarousel({
-			margin: 20,
-			loop: true,
-			responsiveClass: true,
-			dots: false,
-			nav: false,
-			autoplay: true,
-			autoplayTimeout: 3000,
-			responsive: {
-				0: {
-					items: 2,
-				},
-				600: {
-					items: 3,
-				},
-				1000: {
-					items: 4,
-				}
-			}
-		})
-
-		$('.variants-carousel').owlCarousel({
-			loop: false,
-			margin: 10,
-			autoPlay: false,
-			responsive: {
-				0: {
-					items: 2,
-				},
-				600: {
-					items: 3,
-				},
-				1000: {
-					items: 4,
-				}
-			}
-		})
-
-		$(document).ready(function () {
-			$(".xzoom").xzoom({
-
-				// top, left, right, bottom, inside, lens, fullscreen, #ID
-				position: 'right',
-
-				// inside, fullscreen
-				mposition: 'inside',
-
-				// In the HTML structure, this option gives an ability to output xzoom element, to the end of the document body or relative to the parent element of main source image.
-				rootOutput: true,
-
-				// x/y offset
-				Xoffset: 0,
-				Yoffset: 0,
-
-				// Fade in effect, when zoom is opening.
-				fadeIn: true,
-
-				// Fade transition effect, when switching images by clicking on thumbnails.
-				fadeTrans: true,
-
-				// Fade out effect, when zoom is closing.
-				fadeOut: false,
-
-				// Enable smooth effects
-				smooth: true,
-
-				// Smooth move effect of the big zoomed image in the zoom output window. 
-				// The higher value will make movement smoother.
-				smoothZoomMove: 3,
-
-				// Smooth move effect of lens.
-				smoothLensMove: 1,
-
-				// Smooth move effect of scale.
-				smoothScale: 6,
-
-				// From -1 to 1, that means -100% till 100% scale
-				defaultScale: 0,
-
-				// Scale on mouse scroll.
-				scroll: true,
-
-				// Tint color. Color must be provided in format like "#color". 
-				tint: false,
-
-				// Tint opacity from 0 to 1.
-				tintOpacity: 0.5,
-
-				// Lens color. Color must be provided in format like "#color". 
-				lens: false,
-
-				// Lens opacity from 0 to 1.
-				lensOpacity: 0.5,
-
-				// 'box', 'circle'
-				lensShape: 'box',
-
-				// Custom width of zoom window in pixels.
-				zoomWidth: 'auto',
-
-				// Custom height of zoom window in pixels.
-				zoomHeight: 'auto',
-
-				// Class name for source "div" container.
-				sourceClass: 'xzoom-source',
-
-				// Class name for loading "div" container that appear before zoom opens, when image is still loading.
-				loadingClass: 'xzoom-loading',
-
-				// Class name for lens "div".
-				lensClass: 'xzoom-lens',
-
-				// Class name for zoom window(div).
-				zoomClass: 'xzoom-preview',
-
-				// Class name that will be added to active thumbnail image.
-				activeClass: 'xactive',
-
-				// With this option you can make a selection action on thumbnail by hover mouse point on it.
-				hover: false,
-
-				// Adaptive functionality.
-				adaptive: true,
-
-				// When selected position "inside" and this option is set to true, the lens direction of moving will be reversed.
-				lensReverse: false,
-
-				// Same as lensReverse, but only available when adaptive is true.
-				adaptiveReverse: false,
-
-				// Lens will collide and not go out of main image borders. This option is always false for position "lens".
-				lensCollision: true,
-
-				//  Output title/caption of the image, in the zoom output window.
-				title: false,
-
-				// Class name for caption "div" container.
-				titleClass: 'xzoom-caption',
-
-				// Zoom image output as background
-				bg: false
-
-			});
-		});
-	</script>
+	<script type="text/javascript" src="js/pdp.js"></script>
 </body>
 
 </html>

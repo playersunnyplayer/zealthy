@@ -367,7 +367,7 @@ footer h3 {
   height: inherit;
 }
 
-#myBtn {
+#goToTop {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -380,13 +380,14 @@ footer h3 {
   border-radius: 4px;
   width: 50px;
   height: 50px;
-  background: #fcc508;
+  border: solid 1px #d90e13;
+  background: #fdf0f1;
   color: #564300 !important;
   transition: all ease 0.2s;
 }
 
-#myBtn:hover {
-  background: #fb9c08;
+#goToTop:hover {
+  background: #d90e13;
 }
 
 .thumbWrap {
@@ -747,10 +748,10 @@ footer h3 {
   }
 
   footer {
-    padding: 0px 0 30px;
+    padding: 0px 0 130px;
   }
 
-  #myBtn {
+  #goToTop {
     bottom: 70px;
   }
 
