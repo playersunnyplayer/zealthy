@@ -98,10 +98,6 @@ a:hover {
 }
 
 .categoryRowHeader .container {
-  display: flex;
-  gap: 40px;
-  overflow: hidden;
-  overflow-x: auto;
   padding: 10px 0;
 }
 
@@ -123,10 +119,7 @@ h1 {
 
 h2 {
   text-transform: uppercase;
-  color: #2185c8;
-  font-family: Oswald;
   font-weight: normal;
-  font-size: 36px;
 }
 
 h3 {
