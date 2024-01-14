@@ -308,6 +308,35 @@ footer h3 {
   font-family: "FontAwesome";
 }
 
+.headingBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 20px;
+}
+
+.headingBlock a {
+  margin: 0 90px 0 0;
+}
+
+.owl-dots {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.owl-dot {
+    height: 14px;
+    width: 14px;
+    border: solid 1px #e70f14 !important;
+    border-radius: 50px;
+}
+
+.owl-dot.active {
+  background: #e70f14 !important;
+}
+
 .modal-backdrop {
   opacity: 0.8 !important;
 }
@@ -526,6 +555,10 @@ footer h3 {
   padding: 0px 10px 20px 70px;
   color: #666;
   line-height: 24px;
+}
+
+.accordion .card-body ul {
+  list-style: disc;
 }
 
 .accordion .collapse {

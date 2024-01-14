@@ -609,6 +609,11 @@
 									placeholder="Enter Delivery Date" />
 								<label name="deldate" for="deldate">Delivery Date</label>
 							</div>
+							<div class="inputGroup selectSlot">
+								<input class="balloon" id="SelectSlot" type="text" value="8 am - 11 am"
+									placeholder="Select Slot" data-toggle="modal" data-target="#slotPopup" />
+								<label name="pin" for="pin">Select Slot</label>
+							</div>
 							<button class="btn btn-primary">Book your order</button>
 						</div>
 					</div>
@@ -852,12 +857,23 @@
 
 	<section class="relatedServicesSec">
 		<div class="container">
-			<h3>Related Services</h3>
 
-			<div class="row owl-carousel relatedServices-carousel">
+			<div class="headingBlock">
+				<h3>Related Services</h3>
+				<a href="#">
+					View All
+					<i class="fa fa-angle-right"></i>
+				</a>
+			</div>
+
+			<div class="owl-carousel relatedServices-carousel">
 				<div class="productThumb">
 					<a href="#">
 						<figure>
+							<div class="locationSec">
+								<i class="fa fa-location"></i>
+								At your location
+							</div>
 							<img src="images/product-img.png" alt="">
 						</figure>
 
@@ -886,6 +902,10 @@
 				<div class="productThumb">
 					<a href="#">
 						<figure>
+							<div class="locationSec">
+								<i class="fa fa-location"></i>
+								At your location
+							</div>
 							<img src="images/product-img.png" alt="">
 						</figure>
 
@@ -914,6 +934,10 @@
 				<div class="productThumb">
 					<a href="#">
 						<figure>
+							<div class="locationSec">
+								<i class="fa fa-location"></i>
+								At your location
+							</div>
 							<img src="images/product-img.png" alt="">
 						</figure>
 
@@ -942,6 +966,10 @@
 				<div class="productThumb">
 					<a href="#">
 						<figure>
+							<div class="locationSec">
+								<i class="fa fa-location"></i>
+								At your location
+							</div>
 							<img src="images/product-img.png" alt="">
 						</figure>
 
@@ -970,6 +998,10 @@
 				<div class="productThumb">
 					<a href="#">
 						<figure>
+							<div class="locationSec">
+								<i class="fa fa-location"></i>
+								At your location
+							</div>
 							<img src="images/product-img.png" alt="">
 						</figure>
 
@@ -998,6 +1030,10 @@
 				<div class="productThumb">
 					<a href="#">
 						<figure>
+							<div class="locationSec">
+								<i class="fa fa-location"></i>
+								At your location
+							</div>
 							<img src="images/product-img.png" alt="">
 						</figure>
 
@@ -1026,6 +1062,10 @@
 				<div class="productThumb">
 					<a href="#">
 						<figure>
+							<div class="locationSec">
+								<i class="fa fa-location"></i>
+								At your location
+							</div>
 							<img src="images/product-img.png" alt="">
 						</figure>
 
@@ -1054,6 +1094,10 @@
 				<div class="productThumb">
 					<a href="#">
 						<figure>
+							<div class="locationSec">
+								<i class="fa fa-location"></i>
+								At your location
+							</div>
 							<img src="images/product-img.png" alt="">
 						</figure>
 
@@ -1082,6 +1126,10 @@
 				<div class="productThumb">
 					<a href="#">
 						<figure>
+							<div class="locationSec">
+								<i class="fa fa-location"></i>
+								At your location
+							</div>
 							<img src="images/product-img.png" alt="">
 						</figure>
 
@@ -1663,6 +1711,30 @@
                             <button type="submit" class="btn btn-primary mb-3" name="apisubmit">Submit</button>
                         </div> -->
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade slotPopup" id="slotPopup" tabindex="-1" role="dialog"
+		aria-labelledby="ExperiencesPopupLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content verticalText_model">
+				<div class="modal-body">
+					<h3>Select Slot
+						<img src="images/close-icon.svg" class="close" data-dismiss="modal" aria-label="Close" alt="">
+					</h3>
+
+					<div class="slotWrap">
+						<label><input type="radio" class="slotSelect" name="optradio">Option 2 <span></span></label>
+						<label><input type="radio" class="slotSelect" name="optradio">Option 2 <span></span></label>
+						<label><input type="radio" class="slotSelect" name="optradio">Option 2 <span></span></label>
+						<label><input type="radio" class="slotSelect" name="optradio">Option 2 <span></span></label>
+						<label><input type="radio" class="slotSelect" name="optradio">Option 2 <span></span></label>
+						<label><input type="radio" class="slotSelect" name="optradio">Option 2 <span></span></label>
+						<label><input type="radio" class="slotSelect" name="optradio">Option 2 <span></span></label>
+						<label><input type="radio" class="slotSelect" name="optradio">Option 2 <span></span></label>
+					</div>
 				</div>
 			</div>
 		</div>

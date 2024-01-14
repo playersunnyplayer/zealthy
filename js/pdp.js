@@ -29,7 +29,7 @@ $('.relatedServices-carousel').owlCarousel({
     loop: true,
     responsiveClass: true,
     dots: false,
-    nav: false,
+    nav: true,
     autoplay: true,
     autoplayTimeout: 3000,
     responsive: {
