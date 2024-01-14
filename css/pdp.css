@@ -17,14 +17,14 @@
     color: #FF9900;
 }
 
-.zoomBoxRow {
+.leftImgRow {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.zoomBoxWrap {
+.leftImgWrap {
     width: 40%;
     position: relative;
     display: flex;
@@ -32,7 +32,7 @@
     margin: 0 0 auto;
 }
 
-.xzoom {
+.mainImage {
     border-radius: 5px;
     box-shadow: none;
     border: 1px solid rgba(0, 0, 0, 0.10);
@@ -40,7 +40,7 @@
     order: 2;
 }
 
-.xzoom-thumbs {
+.leftImgThumbs {
     gap: 10px;
     display: flex;
     width: 20%;
@@ -48,7 +48,7 @@
     order: 1;
 }
 
-.xzoom-gallery {
+.leftImg {
     width: 80px;
     border-radius: 10px;
     margin: 0;
@@ -961,7 +961,7 @@
 
 @media only screen and (max-width: 767px) {
 
-    .zoomBoxWrap,
+    .leftImgWrap,
     .rightPDPcontent {
         width: 100%;
         flex-direction: column;
