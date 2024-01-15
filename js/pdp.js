@@ -69,3 +69,9 @@ function personalizationDetails() {
 function closePersonalizationDetailsSection() {
     $("#personalizationDetailsSection").slideUp("slow");
 }
+
+$(".leftImgThumbs img").click(function() {
+    let imageName = $(this).attr("data-img");
+    $("#mainImg").attr("src", imageName);
+    $("#fancyboxlink").attr("href", imageName);
+})
