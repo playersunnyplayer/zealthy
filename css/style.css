@@ -140,6 +140,10 @@ h4 {
   font-weight: 700;
 }
 
+h4 .num {
+  color: #e70f14
+}
+
 h5 {
   font-size: 24px;
   line-height: 39px;
@@ -327,10 +331,10 @@ footer h3 {
 }
 
 .owl-dot {
-    height: 14px;
-    width: 14px;
-    border: solid 1px #e70f14 !important;
-    border-radius: 50px;
+  height: 14px;
+  width: 14px;
+  border: solid 1px #e70f14 !important;
+  border-radius: 50px;
 }
 
 .owl-dot.active {
@@ -425,20 +429,20 @@ footer h3 {
 }
 
 .thumbWrap .owl-nav {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    gap: 5px;
-    font-size: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  gap: 5px;
+  font-size: 30px;
 }
 
 .owl-nav button {
-    width: 34px;
-    height: 34px;
-    border: solid 1px #C4C4C4 !important;
-    transition: all ease 0.2s;
-    border-radius: 5px !important;
+  width: 34px;
+  height: 34px;
+  border: solid 1px #C4C4C4 !important;
+  transition: all ease 0.2s;
+  border-radius: 5px !important;
 }
 
 .thumbWrap .owl-stage-outer {
@@ -677,6 +681,198 @@ footer h3 {
   width: 24px;
 }
 
+.playStorePromotionSec {
+  position: relative;
+  padding: 100px 0 0;
+  background: rgb(231 15 20 / 0.05);
+}
+
+.playStorePromotionSec .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.playStorePromotionSec .container::before {
+  content: "";
+  position: absolute;
+  background: url(../images/curve.svg) no-repeat;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.playStorePromotionSec .leftSec {
+  padding: 50px 0 0 20%;
+}
+
+.playStorePromotionSec .get {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  color: #E70F14;
+  margin: 0 0 14px;
+}
+
+.playStorePromotionSec .onYour {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.storeWrap {
+  margin: 20px 0 0;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.storeWrap .planeSketch {
+  position: absolute;
+  left: -65%;
+}
+
+.productThumb {
+  margin: 0 0 20px;
+  position: relative;
+}
+
+.productThumb figure {
+  height: 200px;
+  align-items: flex-start;
+  overflow: hidden;
+  background: #eee;
+  border-radius: 10px;
+}
+
+.productThumb figure img {
+  border-radius: 10px;
+  max-width: inherit;
+  flex-shrink: 0;
+  min-width: 100%;
+}
+
+.productThumbContentArea {
+  border-radius: 10px;
+  background: #FFF;
+  box-shadow: 0px 4px 10px 0px #EEE;
+  margin: -20px 0 0;
+  z-index: 2;
+  position: relative;
+  padding: 20px;
+  transition: all ease .5s;
+}
+
+.productThumb .heading {
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 0 4px;
+}
+
+.productThumbContentArea .priceSec {
+  border-top: solid 1px #eee;
+  margin: 20px -20px 0;
+  padding: 20px 20px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.productThumb:hover .productThumbContentArea {
+  margin: -50px 0 0;
+}
+
+.productThumb .arrow {
+  bottom: 14px;
+}
+
+.productThumb:hover .arrow {
+  background: #ddd;
+  right: 5px;
+}
+
+.locationSec {
+  margin: 0;
+  background: rgb(231 15 20);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 15px 0 5px;
+  border-radius: 0 0 30px;
+  color: #fff;
+}
+
+.blogSec {
+  padding: 60px 0;
+}
+
+.blogSec h3 {
+  margin: 0 0 40px;
+  text-align: center;
+}
+
+.blogThumb {
+  border-radius: 10px;
+  background: #FFF;
+  padding: 0 14px;
+  transition: all ease .2s;
+  box-shadow: 0px 4px 10px 0px #EEE;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blogThumb:hover {
+  box-shadow: 0px 4px 20px 0px #CCC;
+}
+
+.blogThumb figure {
+  margin: 0 -14px 20px;
+}
+
+.blogThumb .heading {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.blogThumb .para {
+  margin: 0 0 10px;
+}
+
+.blogThumb .bottomSec {
+  border-top: solid 1px #eee;
+  padding: 16px 14px;
+  margin: auto -14px 0;
+  display: flex;
+  position: relative;
+}
+
+.blogThumb .date {
+  margin: 0 20px 0 0;
+}
+
+.blogThumb .name {
+  color: #000;
+}
+
+.blogThumb .arrow {
+  bottom: 14px;
+  top: 10px;
+}
+
+.blogThumb:hover .arrow {
+  background: #ddd;
+  right: 5px;
+}
+
+input[type="checkbox"] {
+  accent-color: #E70F14;
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);
@@ -700,6 +896,12 @@ footer h3 {
   }
 }
 
+@media only screen and (max-width: 980px) {
+  .sortBySec {
+    margin: 20px 0 0;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {}
 
 @media screen and (max-width: 1024px) {}
@@ -713,6 +915,18 @@ footer h3 {
     width: 45px;
     top: 1px;
     right: -5px;
+  }
+
+  .productArea {
+    margin: 0 0 20px
+  }
+
+  .headingBlock {
+    margin: 0
+  }
+
+  .sortBySec {
+    margin: 0px 0 0;
   }
 
   .header-search img {
@@ -796,15 +1010,32 @@ footer h3 {
     padding: 0 20px 20px;
   }
 
-  .blogSec {
-    padding: 40px 0 20px;
-  }
-
-  .blogSec h3 {
-    margin: 0 0 10px;
-  }
-
   footer h4 {
     margin: 20px 0 0;
+  }
+
+  .playStorePromotionSec {
+    padding: 20px 0 70px;
+    text-align: center;
+  }
+
+  .playStorePromotionSec .container {
+    justify-content: center;
+  }
+
+  .playStorePromotionSec .leftSec {
+    padding: 50px 0 0 0;
+  }
+
+  .phoneHandWrap {
+    display: none;
+  }
+
+  .blogSec .col-md-4 {
+    margin: 0 0 20px;
+  }
+
+  .noPadMob {
+    padding: 0;
   }
 }
