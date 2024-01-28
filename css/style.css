@@ -133,6 +133,7 @@ h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 35px;
+  margin: 0 0 20px;
 }
 
 h4 {
@@ -877,6 +878,17 @@ input[type="checkbox"] {
   margin: 40px 0;
 }
 
+.loadMoreSec {
+  margin: 10px 0 50px;
+  width: 100%;
+  display: block;
+}
+
+.loadMoreBtn {
+  display: table;
+  margin: 0 auto;
+}
+
 .smallThumbnails {
   display: flex;
   background: rgb(254 243 243);
@@ -910,6 +922,57 @@ input[type="checkbox"] {
 
 .smallThumbnails:hover p {
   font-weight: 800
+}
+
+.smallWidgetThumb {
+    background: rgb(231 15 20 / 0.05);
+    padding: 14px;
+    border-radius: 10px;
+    margin: 0 0 20px;
+    display: block;
+}
+.smallWidgetThumb figure {
+    margin: 0 0 10px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.smallWidgetThumb img {
+  transition: all ease .2s;
+  width: 100%;
+}
+.smallWidgetThumb figcaption {
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  transition: all ease .2s;
+}
+
+.smallWidgetThumb:hover figcaption {
+  color: #e70f14
+}
+
+.smallWidgetThumb:hover img {transform: scale(1.1);}
+
+.heartFrame1,
+.heartFrame2 {
+  position: absolute;
+  opacity: 0.2;
+  width: 300px;
+}
+
+.heartFrame1 {
+  right: 50px;
+  top: 100px;
+}
+
+.heartFrame2 {
+  left: 0;
+  bottom: 100px;
 }
 
 .discountedProductSec {

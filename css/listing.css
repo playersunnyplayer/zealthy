@@ -7,7 +7,7 @@
 .subCategoriesSec {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px -6px 30px;
+    margin: 0 -6px 30px;
 }
 
 .fiveColumn .subCategoriesThumb {
@@ -46,6 +46,11 @@
 
 .subCategoriesThumb:hover figcaption {
     padding: 20px 10px;
+}
+
+.loveWiget {
+    margin: 0 0 50px;
+    position: relative;
 }
 
 .threeColumnLayoutSec {
