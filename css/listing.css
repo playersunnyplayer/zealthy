@@ -10,6 +10,10 @@
     margin: 20px -6px 30px;
 }
 
+.fiveColumn .subCategoriesThumb {
+    width: 20%;
+}
+
 .subCategoriesThumb {
     margin: 0 0 10px;
     padding: 0 6px;
@@ -24,6 +28,7 @@
     position: relative;
     z-index: 0;
     width: 100%;
+    border-radius: 10px;
 }
 
 .subCategoriesThumb figcaption {
@@ -43,8 +48,35 @@
     padding: 20px 10px;
 }
 
+.threeColumnLayoutSec {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.threeColumnLayout_Left .subCategoriesThumb {
+    width: 100%;
+}
+
+.threeColumnLayout_Right .subCategoriesThumb {
+    width: 50%;
+}
+
+.threeColumnLayout_Left,
+.threeColumnLayout_Right {
+    width: 50%;
+    display: flex;
+}
+
+.threeColumnLayout_Right {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
 .productThumbWrap {
-    margin: 0 -14px 50px;
+    margin: 0 -14px 30px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -53,9 +85,21 @@
     display: none;
 }
 
+.featuredExperienceSec {
+    margin: 0 0 50px;
+}
+
+.featuredExperienceSec .row {
+    margin: 0 -6px;
+}
+
+.featuredExperienceSec .col-sm-4 {
+    padding: 0 6px;
+}
+
 @media screen and (max-width: 1024px) {
     .subCategoriesThumb {
-        width: 50%;
+        width: 50% !important;
     }
 }
 
@@ -97,5 +141,16 @@
 
     .stickyFilter .fa {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .threeColumnLayoutSec {
+        flex-direction: column;
+    }
+
+    .threeColumnLayout_Left,
+    .threeColumnLayout_Right {
+        width: 100%;
     }
 }

@@ -873,6 +873,124 @@ input[type="checkbox"] {
   accent-color: #E70F14;
 }
 
+.bannerSec {
+  margin: 40px 0;
+}
+
+.smallThumbnails {
+  display: flex;
+  background: rgb(254 243 243);
+  margin: 0 0 10px 0;
+  justify-content: space-between;
+  padding: 5px 5px 5px 14px;
+  border-radius: 10px;
+  align-items: center;
+  transition: all ease .2s;
+  position: relative;
+}
+
+.smallThumbnails p {
+  transition: all ease .2s;
+}
+
+.smallThumbnails .link {
+  color: #E70F14;
+}
+
+.smallThumbnails figure {
+  height: 70px;
+  width: 70px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.smallThumbnails:hover {
+  box-shadow: 0 0 10px rgb(231 15 20 / 27%);
+}
+
+.smallThumbnails:hover p {
+  font-weight: 800
+}
+
+.discountedProductSec {
+  margin: 0 0 60px;
+}
+
+.discountedInnerSec {
+    display: flex;
+}
+.discountedInnerSec .colLeft {
+    width: 50%;
+    background: rgb(254 243 243);
+    padding: 20px;
+}
+.discountedInnerSec .smallThumbnails {
+    background: #fff;
+    border-radius: 5px;
+    padding: 5px 20px 5px 5px;
+    justify-content: flex-start;
+}
+.discountedInnerSec .smallThumbnails:not(:last-child) {
+    margin: 0 0 20px;
+}
+.discountedInnerSec .smallThumbnails figure {
+  margin: 0 20px 0 0;
+  height: 120px;
+  width: 120px;
+}
+.discountedInnerSec .price {
+  font-size:18px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.discountedInnerSec .colRight {
+    width: 50%;
+    position: relative;
+}
+.discountedInnerSec .discountCurveSec {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    padding: 20px 0 0 20px;
+}
+.discountedInnerSec .discountCurveSec p,
+.discountedInnerSec .discountCurveSec h3 {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  zoom: 1.5;
+}
+.discountedInnerSec .discountCurveSec h3 {
+    margin: 5px 0 0;
+}
+.discountCurve {
+    position: absolute;
+    top: 0;
+    left: -4px;
+    z-index: 0;
+}
+.discountImg {
+    height: 100%;
+}
+
+.fourColumnLayoutSec {
+  display: flex;
+}
+
+.fourColumnLayout_Middle {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.fourColumnLayout_Right {
+  display: flex;
+}
+
+.fourColumnLayout_Middle .subCategoriesThumb {
+  width: 50%
+}
+
 @keyframes rotate {
   to {
     transform: rotate(360deg);
@@ -1037,5 +1155,12 @@ input[type="checkbox"] {
 
   .noPadMob {
     padding: 0;
+  }
+  .discountedInnerSec .colLeft {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .colRight {
+    display: none;
   }
 }
