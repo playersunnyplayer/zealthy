@@ -1,0 +1,58 @@
+@import url(variable.css);
+
+.productThumb {
+    background: #F5F5F5;
+    margin: 0 0 30px;
+}
+
+.bannerSec {
+    background: transparent radial-gradient(closest-side at 50% 50%, #EEFDBC 0%, #FFFBF4 100%) 0% 0% no-repeat padding-box;
+    text-align: center;
+    padding: 100px 0;
+    margin: 0 0 30px;
+    color: #603509;
+}
+
+.downArrow {
+    margin: 20px 0 0 0;
+    height: 20px;
+    animation: MoveUpDown 0.8s linear infinite;
+}
+
+@keyframes MoveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.turmericBg:hover {
+    background: var(--turmericBg);
+}
+
+.appleCiderBg:hover {
+    background: var(--appleCiderBg);
+}
+
+.zealthyLifeBg:hover {
+    background: var(--zealthyLifeBg);
+}
+
+.matchaLatteBg:hover {
+    background: var(--matchaLatteBg);
+}
+
+.turmXBg:hover {
+    background: var(--turmXBg);
+}
+
+.ashwaPROBg:hover {
+    background: var(--ashwaPROBg);
+}
