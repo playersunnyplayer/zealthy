@@ -1,3 +1,5 @@
+@import url(variable.css);
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +10,7 @@
   font-family: 'Avenir Next';
   src: url('../fonts/AvenirNextLTPro-Regular.otf');
 }
+
 @font-face {
   font-family: 'Avenir Next Bold';
   src: url('../fonts/AvenirNextLTPro-Bold.otf');
@@ -115,7 +118,10 @@ h1 {
   color: #603509;
 }
 
-h2 {font-size: 26px;margin: 0 0 20px;}
+h2 {
+  font-size: 26px;
+  margin: 0 0 20px;
+}
 
 h3 {
   color: #603509;
@@ -164,11 +170,12 @@ h6 {
 .btn-secondary {
   border: 1px solid #707070;
   color: #585858;
-  background: none;
+  background: #fff;
 }
 
 .btn-primary:hover,
-.btn-secondary:hover{
+.btn-secondary:hover,
+.btn-trinary:hover {
   background: #161616;
   color: #fff !important;
 }
@@ -176,13 +183,12 @@ h6 {
 .btn-trinary {
   background: #585858;
   color: #fff;
+}
+
+.btn-small {
   height: 28px;
   padding: 0 14px;
   font-size: 8px;
-}
-
-.btn-trinary:hover {
-  background: #fb9c08;
 }
 
 .logo {
@@ -300,20 +306,14 @@ footer li {
 }
 
 .qtySec button {
-  
-width: 19px;
-  
-height: 18px;
-  
-background: #603509;
-  
-border-radius: 50%;
-  
-border: 0;
-  
-color: #fff;
-  
-line-height: 2px;
+  width: 19px;
+  height: 18px;
+  background: #603509;
+  border-radius: 50%;
+  border: 0;
+  color: #fff;
+  line-height: 2px;
+  cursor: pointer;
 }
 
 .qtySec input {
@@ -423,14 +423,15 @@ line-height: 2px;
   border-radius: 4px;
   width: 50px;
   height: 50px;
-  border: solid 1px #d90e13;
+  border: 1px solid #707070;
   background: #fdf0f1;
-  color: #564300 !important;
+  color: #564300;
   transition: all ease 0.2s;
 }
 
 #goToTop:hover {
-  background: #d90e13;
+  background: #707070;
+  color: #fff
 }
 
 .thumbWrap {
@@ -510,7 +511,9 @@ line-height: 2px;
   border-radius: 0;
 }
 
-.newsletter {margin: auto 0 0;}
+.newsletter {
+  margin: auto 0 0;
+}
 
 .newsletter input {
   border: 1px solid #FFFFFF;
@@ -521,9 +524,15 @@ line-height: 2px;
   color: #ffff
 }
 
+.newsletter input::placeholder {
+  color: #fff;
+  opacity: 1;
+  /* Firefox */
+}
+
 .newsletter input:focus {
   background: none;
-  color: #ffff
+  color: #fff
 }
 
 .social-icons {
@@ -547,8 +556,6 @@ line-height: 2px;
 
 .productThumb {
   position: relative;
-  border-right: 1px solid #707070;
-  right: -1px;
 }
 
 .productThumb figure {
@@ -593,25 +600,39 @@ line-height: 2px;
 }
 
 .cardBottomWrap {
-  display: flex;
   margin: 30px 0 0;
 }
 
+
 .productThumbContentArea .priceSec {
+  display: flex;
+}
+
+.productThumbContentArea .btnWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productThumbContentArea .priceSec .price {
+  margin: 0 0 10px;
+  color: #585858;
   font-size: 24px;
   font-weight: 700;
 }
 
-.productThumbContentArea .priceSec .price {margin: 0 0 10px;color: #585858;}
+.productThumbContentArea .rightsec {
+  margin: 0 0 0 auto;
+}
 
-.productThumbContentArea .starsGroup {margin: 0 0 0 auto;}
+.productThumbContentArea .starsGroup {
+  margin: 0 0 0 auto;
+}
 
 input[type="checkbox"] {
   accent-color: #E70F14;
 }
 
-@media screen and (max-width: 1320px) {
-}
+@media screen and (max-width: 1320px) {}
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -619,8 +640,7 @@ input[type="checkbox"] {
   }
 }
 
-@media only screen and (max-width: 980px) {
-}
+@media only screen and (max-width: 980px) {}
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {}
 

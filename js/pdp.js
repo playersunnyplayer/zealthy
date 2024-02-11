@@ -45,3 +45,16 @@ $(".leftImgThumbs img").click(function() {
     $("#mainImg").attr("src", imageName);
     $("#fancyboxlink").attr("href", imageName);
 })
+
+// sticky menu scrollspy
+$('body').scrollspy({ target: '#navbar-example2' })
+var bottom = $('.stickyMenuSec').offset().top + 500;
+$(window).scroll(function () {
+  console.log($('.stickyMenuSec').offset().top)
+  if ($(this).scrollTop() > bottom) {
+    $('.stickyMenuSec').addClass('fixed');
+  }
+  else {
+    $('.stickyMenuSec').removeClass('fixed');
+  }
+});
