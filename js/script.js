@@ -35,9 +35,9 @@ function topFunction() {
 
 // sticky menu scrollspy
 $('body').scrollspy({ target: '#navbar-example2' })
-var bottom = $('.stickyMenuSec').offset().top - 1500;
+var bottom = $('.stickyMenuSec').offset().top + 500;
 $(window).scroll(function () {
-
+  console.log($('.stickyMenuSec').offset().top)
   if ($(this).scrollTop() > bottom) {
     $('.stickyMenuSec').addClass('fixed');
   }
