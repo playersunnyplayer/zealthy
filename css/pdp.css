@@ -192,7 +192,11 @@
 }
 
 .stickyMenuSec h3 {
-    margin: 0
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
 }
 
 .stickyMenuSec figure {
@@ -209,7 +213,9 @@
     font-style: normal;
     font-weight: 700;
     white-space: nowrap;
-    margin: 0;
+    margin: 0 0 0 10px;
+    position: relative;
+    top: 1px;
 }
 
 .stickyMenuSec .btn-primary {
@@ -280,8 +286,7 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
     .stickyMenuSec .rightSec {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     .stickyMenuSec .btn-primary {
@@ -305,25 +310,43 @@ h1 {
         order: 2;
         flex-direction: row;
         width: auto;
+        justify-content: center;
     }
 
     .mainImage {
         order: 1;
-        width: 100%;
+        width: auto;
+        max-height: 300px;
+    }
+
+    #mainImg {
+        max-height: inherit;
+    }
+
+    .firstSec {
+        padding: 30px 0 0;
+    }
+
+    .breadcrumb {
+        display: none;
     }
 
     .rightPDPcontent {
-        padding: 0
+        padding: 0;
+        height: auto;
     }
 
     .stickyMenuSec .container {
         padding: 0 20px;
     }
 
-    .stickyMenuSec figure,
+    .stickyMenuSec figure {
+        display: none;
+    }
+
     .stickyMenuSec .contentSec,
     .stickyMenuSec .cost {
-        display: none;
+        font-size: inherit;
     }
 
     .stickyMenuSec .addon {
@@ -339,16 +362,22 @@ h1 {
 
     .stickyMenuSec .rightSec {
         width: 100%;
+        display: flex;
+        margin: 10px 0 0;
     }
 
     .stickyMenuSec .rightSec .btn {
-        width: 100%;
         max-width: 100%;
         margin: 0;
-        display: table;
+        padding: 0 12px;
+        font-size: 10px;
     }
 
     .tab-content {
         padding: 20px 0 0 0;
+    }
+
+    footer {
+        padding: 0px 0 130px;
     }
 }

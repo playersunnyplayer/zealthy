@@ -32,3 +32,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+$('.header-search input').blur(function()
+{
+  $(".searchLine").hide();
+  $(this).attr('placeholder','Search product name, brand name…');
+});

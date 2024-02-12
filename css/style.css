@@ -100,6 +100,7 @@ a:hover {
   position: relative;
   width: 24%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header-search input {
@@ -110,6 +111,48 @@ a:hover {
   height: 28px;
   width: 100%;
   padding: 0 15px 0 36px;
+  z-index: 1;
+  position: relative;
+}
+
+.header-search input:focus {
+  background-color: #FFFBF4;
+}
+
+.searchLine {
+  border-right: 2px solid #585858;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter {
+  width: 0;
+  animation: typewriter 4s steps(44) 1s infinite normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+  position: absolute;
+  top: 4px;
+  left: 40px;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 24em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
 }
 
 h1 {
@@ -193,6 +236,10 @@ h6 {
 
 .logo {
   height: 40px;
+}
+
+.smallLogo {
+  display: none;
 }
 
 .logo a {
@@ -649,9 +696,22 @@ input[type="checkbox"] {
 @media screen and (max-width: 980px) {}
 
 @media only screen and (max-width: 767px) {
+  .header {
+    padding: 20px 0;
+  }
 
-  .sortBySec {
-    margin: 0px 0 0;
+  .header-search {
+    width: 100%;
+    order: 3;
+    margin: 20px 0 0;
+  }
+
+  .smallLogo {
+    display: block;
+  }
+
+  .bigLogo {
+    display: none;
   }
 
   h1 {
@@ -662,7 +722,7 @@ input[type="checkbox"] {
 
   h2 {
     font-size: 30px;
-    line-height: 20px;
+    line-height: 25px;
     margin: 10px 0 30px !important;
   }
 
@@ -691,7 +751,7 @@ input[type="checkbox"] {
   }
 
   footer {
-    padding: 0px 0 130px;
+    padding: 0px 0 0;
   }
 
   #goToTop {
