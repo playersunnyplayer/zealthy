@@ -1,0 +1,135 @@
+.homeCarousel {
+    background: transparent radial-gradient(closest-side at 50% 50%, #FFDFA8 0%, #FFFBF4 100%) 0% 0% no-repeat;
+    padding: 100px 0;
+    position: relative;
+}
+
+.homeCarouselSlide {
+    display: flex;
+}
+
+.homeCarousel .leftArea {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeCarousel .leftArea p {
+    color: #212020;
+}
+
+.homeCarousel .leftArea a {
+    position: relative;
+    display: flex;
+    margin: auto 0 0 auto;
+    text-transform: uppercase;
+    bottom: 90px;
+    gap: 10px;
+}
+
+.homeCarousel .arrow {
+    height: 13px;
+    width: auto !important;
+    right: 0;
+    top: 4px;
+    position: relative;
+}
+
+.homeCarousel .shop {
+    position: relative;
+}
+
+.homeCarousel .shop:after {
+    content: "";
+    height: 30px;
+    width: 60px;
+    border: solid 1px #603509;
+    position: absolute;
+    top: -6px;
+    left: -20px;
+    opacity: 0;
+    transition: all ease .2s;
+}
+
+.homeCarousel .shop:hover:after {
+    opacity: 1;
+    left: -10px;
+    width: 160px;
+}
+
+.homeCarousel .heading {
+    color: #603509;
+    font-size: 42px;
+    line-height: 50px;
+    width: 73%;
+    margin: 0 0 20px;
+    position: relative;
+    padding: 30px 0 0;
+}
+
+.homeCarousel .heading:after {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background: #603509;
+    position: absolute;
+    top: 0px;
+    left: 0
+}
+
+.homeCarousel .heading strong {
+    font-weight: 900;
+}
+
+.homeCarousel .rightArea {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homeCarousel .more {
+    margin: auto 0 0 auto;
+    font-style: italic;
+    position: relative;
+    bottom: 90px;
+}
+
+.homeCarousel .more:after {
+    content: "";
+    height: 1px;
+    width: 30px;
+    background: #212020;
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.homeCarousel .owl-dots {
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+.productBannerImg {
+    max-width: 80% !important;
+    position: relative;
+    margin: 0 0 0 30px;
+}
+
+.owl-item.active .productBannerImg {
+    animation: slideImg 1s ease-in .1s;
+}
+
+@keyframes slideImg {
+    from {
+        right: -20px;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+.missionLine {}

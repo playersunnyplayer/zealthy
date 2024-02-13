@@ -92,37 +92,6 @@
     margin: 0 10px 10px 0;
 }
 
-.relatedServicesSec {
-    background: transparent radial-gradient(closest-side at 50% 50%, #FFFFFF 0%, #FFFFFF 39%, #FFF1D1 100%) 0% 0%;
-    padding: 60px 0;
-}
-
-.relatedServicesSec h3 {
-    margin: 0 auto;
-}
-
-.relatedServicesSec .innerSec {
-    border: 1px solid #707070;
-}
-
-.relatedServicesSec .headingBlock {
-    border-bottom: 1px solid #707070;
-    padding: 4px 0;
-}
-
-.relatedServicesSec .container {
-    position: relative;
-}
-
-.relatedServicesSec .owl-nav {
-    position: absolute;
-    top: -56px;
-    right: 0;
-    display: flex;
-    gap: 5px;
-    font-size: 30px;
-}
-
 .deleviredSec {
     margin: 40px 0;
 }
