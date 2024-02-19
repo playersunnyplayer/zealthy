@@ -23,7 +23,7 @@ html {
 body {
   font-family: 'Avenir Next', sans-serif;
   font-size: 14px;
-  color: #444;
+  color: #603509;
   line-height: 21px;
 }
 
@@ -164,6 +164,7 @@ h1 {
 h2 {
   font-size: 26px;
   margin: 0 0 20px;
+  line-height: 36px;
 }
 
 h3 {
@@ -246,6 +247,10 @@ h6 {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.noBg {
+  background: none !important;
 }
 
 footer {
@@ -677,6 +682,7 @@ footer li {
 input[type="checkbox"] {
   accent-color: #E70F14;
 }
+
 .relatedServicesSec {
   background: transparent radial-gradient(closest-side at 50% 50%, #FFFFFF 0%, #FFFFFF 39%, #FFF1D1 100%) 0% 0%;
   padding: 60px 0;
@@ -708,11 +714,15 @@ input[type="checkbox"] {
   font-size: 30px;
 }
 
+.relatedServices-carousel .productThumb {
+  border-left: 1px solid #707070;
+}
+
 @media screen and (max-width: 1320px) {}
 
 @media screen and (max-width: 1200px) {
   .container {
-    padding: 0 30px;
+    padding: 30px 30px;
   }
 }
 
@@ -726,7 +736,11 @@ input[type="checkbox"] {
 
 @media only screen and (max-width: 767px) {
   .header {
-    padding: 20px 0;
+    padding: 0;
+  }
+
+  .header .container {
+    padding: 10px 30px 20px;
   }
 
   .header-search {
@@ -751,7 +765,6 @@ input[type="checkbox"] {
 
   h2 {
     font-size: 30px;
-    line-height: 25px;
     margin: 10px 0 30px !important;
   }
 
@@ -794,5 +807,9 @@ input[type="checkbox"] {
 
   .accordion .card-body {
     padding: 0 20px 20px;
+  }
+
+  .newsletter {
+    margin: 20px 0 0;
   }
 }

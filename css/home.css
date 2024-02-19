@@ -1,5 +1,12 @@
-.homeCarousel {
+body {
+    background: #FFF9EF
+}
+
+.homeCarouselWrap {
     background: transparent radial-gradient(closest-side at 50% 50%, #FFDFA8 0%, #FFFBF4 100%) 0% 0% no-repeat;
+}
+
+.homeCarousel {
     padding: 100px 0;
     position: relative;
 }
@@ -132,4 +139,126 @@
     }
 }
 
-.missionLine {}
+.bgColorWrap {
+    background: transparent radial-gradient(closest-side at 50% 50%, #FFDFA8 0%, #FFFBF4 100%) 0% 0%;
+}
+
+.missionLine {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 0;
+    padding: 0 0 70px;
+}
+
+.zealtyThumbSec {
+    display: flex;
+}
+
+.zealtyThumb {
+    padding: 0 20px;
+    text-align: center;
+    flex-grow: 1;
+    margin: 0 0 30px;
+}
+
+.zealtyThumb figure {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+}
+
+.zealtyThumb figcaption {}
+
+.zealtyLifeSec {
+    padding: 0 0 70px;
+}
+
+.zealtyLifeSec .row {
+    align-items: center;
+}
+
+.zealtyLifeSec h3 {
+    padding: 20px 0;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    text-align: center;
+    margin: 0 0 70px;
+}
+
+.zealtyLifeSec p {
+    line-height: 30px;
+    margin: 0 0 30px;
+}
+
+.feedSec {
+    background: transparent radial-gradient(closest-side at 50% 50%, #F2D5FF 0%, #FFFFFF 100%) 0% 0%;
+    padding: 100px 0;
+}
+
+.feedSec h3 {
+    padding: 20px 0;
+    border-bottom: 1px solid #707070;
+    text-align: center;
+    margin: 0 0 70px;
+}
+
+.firstPhaseSec {
+    background: transparent radial-gradient(closest-side at 50% 50%, #E2FFD3 0%, #FFFFFF 100%);
+    padding: 100px 0;
+}
+
+.firstPhaseSec .content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 160px 0 0;
+}
+
+.phaseVideo {
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width: 1200px) {
+    .homeCarousel .leftArea a {
+        bottom: 0;
+        margin: 20px 0 0;
+    }
+
+    .homeCarousel .more {
+        bottom: 0;
+        margin: 20px 0 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .homeCarousel {
+        padding: 50px 0;
+        position: relative;
+    }
+
+    .missionLine {
+        padding: 0;
+    }
+
+    .zealtyLifeSec {
+        padding: 0
+    }
+
+    .zealtyThumbSec {
+        flex-wrap: wrap;
+    }
+
+    .feedSec {
+        padding: 0
+    }
+
+    .firstPhaseSec {
+        padding: 50px 0;
+    }
+
+    .firstPhaseSec .content {
+        padding: 0;
+        margin: 0 0 40px;
+    }
+}
