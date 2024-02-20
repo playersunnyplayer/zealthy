@@ -233,12 +233,29 @@ body {
 
 @media screen and (max-width: 767px) {
     .homeCarousel {
-        padding: 50px 0;
+        padding: 0 0 20px;
         position: relative;
     }
 
+    .homeCarousel .heading {
+        width: 100%
+    }
+
+    .homeCarouselSlide {
+        flex-direction: column;
+    }
+    
+    .homeCarousel .leftArea,
+    .homeCarousel .rightArea {
+        width: 100%;
+    }
+
+    .relatedServicesSec {
+    padding: 0;
+    }
+
     .missionLine {
-        padding: 0;
+        padding: 0 20px;
     }
 
     .zealtyLifeSec {
