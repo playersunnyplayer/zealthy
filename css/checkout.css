@@ -1,0 +1,314 @@
+.checkoutHeader {
+    margin: 0 0 40px;
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    padding: 15px;
+    background: #FFFBF4;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.inputPin {
+    width: 43%;
+}
+
+.leftLoginWrap {
+    display: flex;
+}
+
+.leftLoginWrap input {
+    margin: 0 0 10px
+}
+
+.leftLoginWrap .rightArea {
+    padding: 0 0 0 50px;
+    margin: 0 0 0 auto;
+    border-left: solid 1px #ECECEC;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    width: 50%;
+}
+
+.leftLoginWrap .or {
+    position: absolute;
+    left: -21px;
+    top: 0;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px #ddd;
+}
+
+.leftLoginWrap .rightArea button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leftLoginWrap .rightArea i {
+    font-size: 16px;
+    position: relative;
+    top: -1px;
+}
+
+.card-header h2 {
+    margin: 0;
+}
+
+.accordionNum {
+    background: #FFEBEB !important;
+    font-size: 14px;
+}
+
+.addressCard {
+    padding: 20px;
+    margin: 30px 0 20px !important;
+}
+
+.addressCard h4 {
+    margin: 0 0 20px
+}
+
+.radioWrap {
+    margin: 0 0 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.addNewAddr {
+    margin: 30px 0 30px;
+}
+
+.addNewAddr:hover {
+    background: rgb(254 243 243);
+    padding-left: 20px;
+}
+
+.accordion .card-body {
+    padding: 20px 24px 20px;
+}
+
+address {
+    border: solid 1px #ECECEC;
+    padding: 20px;
+}
+
+address h4 {
+    position: relative;
+    color: #000;
+    padding: 0 80px 0 0;
+}
+
+address .rightWrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    gap: 20px;
+}
+
+address .rightWrap button {
+    border: 0;
+    background: 0;
+    cursor: pointer;
+}
+
+address .rightWrap button img {
+    height: 20px;
+}
+
+.filterSecWrap {
+    margin: 0 0 auto 0;
+    padding: 0;
+}
+
+.accordion .card {
+    margin: 0 0 20px;
+}
+
+.cartContentArea {
+    padding: 0
+}
+
+.smileRow {
+    padding: 20px;
+}
+
+.contentWrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contentLeft {
+    margin: 0 0 30px;
+}
+
+.acceptThumbSec {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 0 40px;
+}
+
+.acceptThumb {
+    text-align: center;
+}
+
+.acceptThumb figure {
+    height: 50px;
+    width: 50px;
+    border: solid 1px #ECECEC;
+    #ECECEC: ;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 auto 5px;
+    overflow: hidden;
+}
+
+.acceptThumb figure img {
+    min-width: 20px;
+}
+
+
+.btn.acceptThumb {
+    height: auto;
+    padding: 0;
+    width: 46%;
+    padding: 20px;
+    position: relative;
+    border: solid 1px #ECECEC;
+}
+
+.btn.acceptThumb figure {
+    height: auto;
+    width: 46%;
+    max-width: 70px;
+    padding: 20px;
+}
+
+.btn.acceptThumb.selected {
+    position: relative;
+    border: solid 1px #161616;
+}
+
+.btn.acceptThumb.selected:after {
+    content: "\2713";
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 30px;
+}
+
+.veritcalMenu {
+    display: flex;
+    width: 100%;
+}
+
+.veritcalMenu .nav {
+    border: 0;
+    flex-direction: column;
+    width: 30%;
+    background: #f9f9f9;
+}
+
+.veritcalMenu .tab-pane {
+    padding: 0 0 0 30px;
+}
+
+.veritcalMenu .nav-item {
+    margin: 0;
+}
+
+.veritcalMenu .nav-link {
+    border: none;
+    border-radius: 0;
+    border-bottom: solid 1px #ECECEC;
+}
+
+.veritcalMenu .nav-link.active {
+    border-left: solid 5px #000;
+}
+
+.veritcalMenu .tab-content {
+    width: 70%;
+    padding: 0;
+}
+
+.selectBank {
+    padding: 10px;
+    width: 100%;
+    margin: 0px 0 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .checkoutHeader .container {
+        padding: 0px 0px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+    .cartContentArea,
+    .filterSecWrap {
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-header h2 {
+        margin: 0 !important;
+    }
+    .leftLoginWrap {
+        flex-direction: column;
+    }
+
+    .inputPin {
+        width: 100%
+    }
+
+    .leftLoginWrap .rightArea {
+        margin: 40px 0 0;
+        border-left: 0;
+        border-top: solid 1px #ECECEC;
+        padding: 40px 0 0;
+        width: 100%;
+    }
+
+    .leftLoginWrap .or {
+        left: 50%;
+        top: -21px;
+        transform: translateX(-50%);
+    }
+
+    .btn.acceptThumb {
+        width: 100%;
+    }
+    
+    .addressCard {
+        padding: 0;
+        border: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .addressCard .btn {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .leftLoginWrap .rightArea {
+        flex-direction: column
+    }
+    .rightArea .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
