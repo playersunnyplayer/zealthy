@@ -204,6 +204,9 @@ h6 {
   text-transform: uppercase;
   padding: 0 30px;
   letter-spacing: 1.44px;
+  display: flex;
+  align-items: center;
+  
 }
 
 .btn-primary {
@@ -234,15 +237,6 @@ h6 {
   height: 28px;
   padding: 0 14px;
   font-size: 8px;
-}
-
-.btn-dashed {
-  border: dashed 1px #161616;
-  padding: 10px;
-  color: #161616;
-  transition: all ease .2s;
-  cursor: pointer;
-  text-align: center;
 }
 
 .logo {
@@ -443,33 +437,6 @@ footer li {
   border: 0;
 }
 
-.modal.fade.right .modal-dialog {
-    position: absolute;
-    /* right: 0; */
-    margin: 0;
-    width: 100%;
-    transform: translate3d(0%, 0, 0);
-}
-
-.modal.fade.right.fade .modal-dialog {
-    right: 0;
-    transition: opacity 0.3s linear, right 0.3s ease-out;
-}
-
-.modal.fade.right .modal-content {
-    height: 100%;
-}
-
-.modal.fade.right .modal-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.smallThumbnails {
-    width: 100%;
-}
-
 .form-group label {
   font-size: 14px;
   line-height: 20px;
@@ -594,6 +561,12 @@ footer li {
   right: 5px;
 }
 
+.accordion .card {
+  margin: 0 0 20px;
+  border-color: #ECECEC;
+  border-radius: 0;
+}
+
 .newsletter {
   margin: auto 0 0;
 }
@@ -654,6 +627,7 @@ footer li {
   max-width: 80%;
   max-height: 100%;
   flex-shrink: 0;
+  /* min-width: 80%; */
   transition: all ease .2s;
 }
 
@@ -749,301 +723,6 @@ input[type="checkbox"] {
   border-left: 1px solid #707070;
 }
 
-.accordion .card {
-  margin: 0 0 20px;
-  border-color: #ECECEC;
-  border-radius: 0;
-}
-
-.card-header {
-  border: 0;
-  background: none;
-  padding: 0;
-}
-
-.card-header .btn {
-  height: auto;
-  white-space: initial;
-  line-height: 26px;
-}
-
-.card-header h2 {
-  padding: 10px 0 10px 40px;
-  position: relative;
-}
-
-.card-header .actionIcon,
-.card-header .accordionNum {
-  width: 30px;
-  height: 30px;
-  background: #ddd;
-  position: absolute;
-  border-radius: 50%;
-  top: 8px;
-  left: 20px;
-  transition: all ease .2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-header:hover .actionIcon {
-  background: #161616;
-  color: #fff
-}
-
-.card-header .actionIcon:after {
-  content: "-";
-  font-size: 22px;
-}
-
-.card-header .collapsed .actionIcon:after {
-  content: "+";
-}
-
-.card-header h2,
-.card-header .btn-link {
-  color: #444;
-  font-family: inherit;
-  text-transform: capitalize;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  margin: 0;
-}
-
-.accordion .card-body {
-  padding: 0px 10px 20px 70px;
-  color: #666;
-  line-height: 24px;
-}
-
-.accordion .card-body ul {
-  list-style: none;
-}
-
-.accordion .collapse {
-  padding: 0;
-}
-
-.inputNumGroup {
-  justify-content: space-between;
-  display: flex;
-  gap: 10px;
-  margin: 10px 0 0;
-}
-
-.inputNumGroup button {
-  padding: 0 10px;
-  height: 28px;
-  display: block;
-}
-
-.inputNumGroup input[type="number"] {
-  height: 28px;
-  width: 50%;
-  padding: 0 10px;
-  text-align: center;
-}
-
-.btnMinus {
-  border-color: #E70F14;
-  color: #E70F14 !important;
-}
-
-.btnMinus:hover {
-  background: #E70F14;
-}
-
-.btnPlus {
-  border-color: #44aa00;
-  color: #44aa00 !important;
-}
-
-.btnPlus:hover {
-  background: #44aa00;
-}
-
-.smallThumbnails {
-  display: flex;
-  background: rgb(254 243 243);
-  margin: 0 0 10px 0;
-  justify-content: space-between;
-  padding: 5px 5px 5px 14px;
-  border-radius: 10px;
-  align-items: center;
-  transition: all ease .2s;
-  position: relative;
-}
-
-.smallThumbnails p {
-  transition: all ease .2s;
-}
-
-.smallThumbnails .link {
-  color: #E70F14;
-}
-
-.smallThumbnails figure {
-  height: 70px;
-  width: 70px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.smallThumbnails:hover {
-  box-shadow: 0 0 10px rgb(231 15 20 / 27%);
-}
-
-.smallThumbnails:hover p {
-  font-weight: 800
-}
-
-.smallWidgetThumb {
-  background: rgb(231 15 20 / 0.05);
-  padding: 14px;
-  border-radius: 10px;
-  margin: 0 0 20px;
-  display: block;
-}
-
-.smallWidgetThumb figure {
-  margin: 0 0 10px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.smallWidgetThumb img {
-  transition: all ease .2s;
-  width: 100%;
-}
-
-.smallWidgetThumb figcaption {
-  font-size: 18px;
-  font-weight: 700;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  transition: all ease .2s;
-}
-
-.smallWidgetThumb:hover figcaption {
-  color: #e70f14
-}
-
-.smallWidgetThumb:hover img {
-  transform: scale(1.1);
-}
-
-.smallThumbnails {
-  width: 48%;
-  justify-content: flex-start;
-  gap: 20px;
-  padding: 10px 20px 20px;
-}
-
-.smallThumbnailsWrap {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 10px;
-  margin: 0;
-  max-height: 380px;
-  overflow-y: auto;
-}
-
-.smallThumbnailsWrap .smallThumbnails {
-  width: 100%
-}
-
-.smallThumbnails .close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 15px;
-}
-
-.smallThumbnails .inputNumGroup {
-  width: 130px;
-}
-
-.filterSecInside {
-  background: #f9f9f9;
-  padding: 20px;
-}
-
-.filterSecInside h4 {
-  margin: 0 0 14px
-}
-
-.filterSecInside .btn-primary {
-    width: 100%;
-    margin: 20px 0 0;
-}
-
-.totalFinalPrice {
-    background: rgb(238 238 238);
-    padding: 10px 5px;
-    margin: 10px -20px 0;
-    font-size: 16px;
-}
-
-.smileRow {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.smileCol {
-  display: flex;
-  align-items: center;
-  margin: 0 50px 20px 0;
-}
-
-.smileCol img {
-  height: 44px;
-  margin: 0 10px 0 0;
-}
-
-.smileCol small {
-  color: #C00;
-}
-
-.guaranted {
-  color: #000;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-  margin: 10px 0 0;
-}
-
-.smileColRight {
-  position: relative;
-  top: 8px;
-}
-
-.smileColRight .thumb {
-  display: flex;
-}
-
-.smileColRight .thumb figure {
-  width: 30px;
-}
-
-.checkoutHeader {
-  margin: 0 0 40px;
-  display: block;
-  width: 100%;
-  position: relative;
-  z-index: 99;
-  padding: 15px;
-  background: #FFFBF4;
-  box-shadow: 0px 3px 6px #00000029;
-}
-
 @media screen and (max-width: 1320px) {}
 
 @media screen and (max-width: 1200px) {
@@ -1137,10 +816,5 @@ input[type="checkbox"] {
 
   .newsletter {
     margin: 20px 0 0;
-  }
-  
-
-  .smallThumbnails {
-    width: 100%;
   }
 }

@@ -7,7 +7,7 @@
 .ratingHeader small {
     margin: 0 0 0 10px;
     color: #603509;
-   
+    text-decoration: underline;
 }
 
 .firstSec {
@@ -43,14 +43,6 @@
     width: 20%;
     flex-direction: column;
     order: 1;
-    max-height: 360px;
-    overflow-y: auto;
-}
-
-
-.leftImgThumbs::-webkit-scrollbar {
-  width: 5px;
-  height: 2px;
 }
 
 .leftImgThumbs figure {
@@ -79,7 +71,7 @@
     width: 60%;
     position: relative;
     z-index: 0;
-    height: 80vh;
+    height: 400px;
     overflow-y: auto;
 }
 
@@ -199,8 +191,6 @@
     margin: 0 0 0 auto;
     width: 300px;
     max-width: 300px;
-    text-align: center;
-    justify-content: space-around;
 }
 
 .stickyMenuSec .rightSec {
