@@ -7,12 +7,18 @@ body {
 }
 
 .homeCarousel {
-    padding: 100px 0;
+    padding: 0 0;
     position: relative;
+    display:block;
+}
+
+.feed-carousel
+{
+   
+    display:flex;
 }
 
 .homeCarouselSlide {
-    display: flex;
 }
 
 .homeCarousel .leftArea {
@@ -120,9 +126,10 @@ body {
 }
 
 .productBannerImg {
-    max-width: 80% !important;
+    max-width: 100% !important;
     position: relative;
-    margin: 0 0 0 30px;
+    margin: 0;
+    padding: 0;
 }
 
 .owl-item.active .productBannerImg {
@@ -145,9 +152,9 @@ body {
 
 .missionLine {
     text-align: center;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto 0;
-    padding: 0 0 70px;
+    padding: 0 0 30px;
 }
 
 .zealtyThumbSec {
@@ -204,7 +211,7 @@ body {
 
 .firstPhaseSec {
     background: transparent radial-gradient(closest-side at 50% 50%, #E2FFD3 0%, #FFFFFF 100%);
-    padding: 100px 0;
+    padding: 0 0 100px 0;
 }
 
 .firstPhaseSec .content {
@@ -237,6 +244,10 @@ body {
         position: relative;
     }
 
+    .productBannerImg {
+        padding: 0
+    }
+
     .homeCarousel .heading {
         width: 100%
     }
@@ -255,7 +266,7 @@ body {
     }
 
     .missionLine {
-        padding: 0 20px;
+        padding: 0 20px 20px;
     }
 
     .zealtyLifeSec {

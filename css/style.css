@@ -99,13 +99,13 @@ a:hover {
 
 .header-search {
   position: relative;
-  width: 24%;
-  margin: 0 auto;
+  width: 20%;
+  margin: 0 0 0 auto;
   overflow: hidden;
 }
 
 .header-search input {
-  background: url(../images/search-icon.svg) no-repeat top 7px left 10px;
+  background: url(../images/search-icon.svg) no-repeat top 5px left 10px;
   background-size: 14px;
   border: 1px solid #707070;
   border-radius: 20px;
@@ -134,6 +134,7 @@ a:hover {
   position: absolute;
   top: 4px;
   left: 40px;
+  display: none;
 }
 
 @keyframes typewriter {
@@ -204,6 +205,9 @@ h6 {
   text-transform: uppercase;
   padding: 0 30px;
   letter-spacing: 1.44px;
+  display: flex;
+  align-items: center;
+  
 }
 
 .btn-primary {
@@ -236,15 +240,6 @@ h6 {
   font-size: 8px;
 }
 
-.btn-dashed {
-  border: dashed 1px #161616;
-  padding: 10px;
-  color: #161616;
-  transition: all ease .2s;
-  cursor: pointer;
-  text-align: center;
-}
-
 .logo {
   height: 40px;
 }
@@ -272,6 +267,7 @@ footer {
 footer a {
   color: #eee;
   transition: all ease .2s;
+  text-transform: uppercase;
 }
 
 footer a:hover {
@@ -443,33 +439,6 @@ footer li {
   border: 0;
 }
 
-.modal.fade.right .modal-dialog {
-    position: absolute;
-    /* right: 0; */
-    margin: 0;
-    width: 100%;
-    transform: translate3d(0%, 0, 0);
-}
-
-.modal.fade.right.fade .modal-dialog {
-    right: 0;
-    transition: opacity 0.3s linear, right 0.3s ease-out;
-}
-
-.modal.fade.right .modal-content {
-    height: 100%;
-}
-
-.modal.fade.right .modal-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.smallThumbnails {
-    width: 100%;
-}
-
 .form-group label {
   font-size: 14px;
   line-height: 20px;
@@ -594,6 +563,12 @@ footer li {
   right: 5px;
 }
 
+.accordion .card {
+  margin: 0 0 20px;
+  border-color: #ECECEC;
+  border-radius: 0;
+}
+
 .newsletter {
   margin: auto 0 0;
 }
@@ -647,6 +622,16 @@ footer li {
   overflow: hidden;
   border-radius: 10px;
   padding: 20px 0 0;
+  position: relative;
+}
+
+.productThumb figure .hoverBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  transition: all ease .2s;
 }
 
 .productThumb figure img {
@@ -654,12 +639,18 @@ footer li {
   max-width: 80%;
   max-height: 100%;
   flex-shrink: 0;
+  width: auto !important;
   transition: all ease .2s;
+  z-index: 1;
 }
 
-.productThumb:hover figure img {
-  filter: drop-shadow(5px 5px 50px #DB8520);
+.productThumb:hover .hoverBackground {
+  opacity: 1
 }
+
+/* .productThumb:hover figure img {
+  filter: drop-shadow(5px 5px 50px #DB8520);
+} */
 
 .productThumbContentArea {
   position: relative;
@@ -672,14 +663,16 @@ footer li {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  margin: 0 0 10px;
+  margin: 20px 0 10px;
   line-height: 30px;
+  min-height: auto;
 }
 
 .productThumb p {
   color: #603509;
   font-size: 12px;
   line-height: 16px;
+  min-height: 70px;
 }
 
 .cardBottomWrap {
@@ -732,6 +725,10 @@ input[type="checkbox"] {
   padding: 4px 0;
 }
 
+.relatedServicesSec .owl-item {
+  height: 100%;
+}
+
 .relatedServicesSec .container {
   position: relative;
 }
@@ -747,308 +744,14 @@ input[type="checkbox"] {
 
 .relatedServices-carousel .productThumb {
   border-left: 1px solid #707070;
-}
-
-.accordion .card {
-  margin: 0 0 20px;
-  border-color: #ECECEC;
-  border-radius: 0;
-}
-
-.card-header {
-  border: 0;
-  background: none;
-  padding: 0;
-}
-
-.card-header .btn {
-  height: auto;
-  white-space: initial;
-  line-height: 26px;
-}
-
-.card-header h2 {
-  padding: 10px 0 10px 40px;
-  position: relative;
-}
-
-.card-header .actionIcon,
-.card-header .accordionNum {
-  width: 30px;
-  height: 30px;
-  background: #ddd;
-  position: absolute;
-  border-radius: 50%;
-  top: 8px;
-  left: 20px;
-  transition: all ease .2s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-header:hover .actionIcon {
-  background: #161616;
-  color: #fff
-}
-
-.card-header .actionIcon:after {
-  content: "-";
-  font-size: 22px;
-}
-
-.card-header .collapsed .actionIcon:after {
-  content: "+";
-}
-
-.card-header h2,
-.card-header .btn-link {
-  color: #444;
-  font-family: inherit;
-  text-transform: capitalize;
-  font-size: 18px;
-  font-weight: 700;
-  text-decoration: none;
-  margin: 0;
-}
-
-.accordion .card-body {
-  padding: 0px 10px 20px 70px;
-  color: #666;
-  line-height: 24px;
-}
-
-.accordion .card-body ul {
-  list-style: none;
-}
-
-.accordion .collapse {
-  padding: 0;
-}
-
-.inputNumGroup {
-  justify-content: space-between;
-  display: flex;
-  gap: 10px;
-  margin: 10px 0 0;
-}
-
-.inputNumGroup button {
-  padding: 0 10px;
-  height: 28px;
-  display: block;
-}
-
-.inputNumGroup input[type="number"] {
-  height: 28px;
-  width: 50%;
-  padding: 0 10px;
-  text-align: center;
-}
-
-.btnMinus {
-  border-color: #E70F14;
-  color: #E70F14 !important;
-}
-
-.btnMinus:hover {
-  background: #E70F14;
-}
-
-.btnPlus {
-  border-color: #44aa00;
-  color: #44aa00 !important;
-}
-
-.btnPlus:hover {
-  background: #44aa00;
-}
-
-.smallThumbnails {
-  display: flex;
-  background: rgb(254 243 243);
-  margin: 0 0 10px 0;
-  justify-content: space-between;
-  padding: 5px 5px 5px 14px;
-  border-radius: 10px;
-  align-items: center;
-  transition: all ease .2s;
-  position: relative;
-}
-
-.smallThumbnails p {
-  transition: all ease .2s;
-}
-
-.smallThumbnails .link {
-  color: #E70F14;
-}
-
-.smallThumbnails figure {
-  height: 70px;
-  width: 70px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-
-.smallThumbnails:hover {
-  box-shadow: 0 0 10px rgb(231 15 20 / 27%);
-}
-
-.smallThumbnails:hover p {
-  font-weight: 800
-}
-
-.smallWidgetThumb {
-  background: rgb(231 15 20 / 0.05);
-  padding: 14px;
-  border-radius: 10px;
-  margin: 0 0 20px;
-  display: block;
-}
-
-.smallWidgetThumb figure {
-  margin: 0 0 10px;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.smallWidgetThumb img {
-  transition: all ease .2s;
-  width: 100%;
-}
-
-.smallWidgetThumb figcaption {
-  font-size: 18px;
-  font-weight: 700;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  transition: all ease .2s;
-}
-
-.smallWidgetThumb:hover figcaption {
-  color: #e70f14
-}
-
-.smallWidgetThumb:hover img {
-  transform: scale(1.1);
-}
-
-.smallThumbnails {
-  width: 48%;
-  justify-content: flex-start;
-  gap: 20px;
-  padding: 10px 20px 20px;
-}
-
-.smallThumbnailsWrap {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 20px;
-  row-gap: 10px;
-  margin: 0;
-  max-height: 380px;
-  overflow-y: auto;
-}
-
-.smallThumbnailsWrap .smallThumbnails {
-  width: 100%
-}
-
-.smallThumbnails .close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  width: 15px;
-}
-
-.smallThumbnails .inputNumGroup {
-  width: 130px;
-}
-
-.filterSecInside {
-  background: #f9f9f9;
-  padding: 20px;
-}
-
-.filterSecInside h4 {
-  margin: 0 0 14px
-}
-
-.filterSecInside .btn-primary {
-    width: 100%;
-    margin: 20px 0 0;
-}
-
-.totalFinalPrice {
-    background: rgb(238 238 238);
-    padding: 10px 5px;
-    margin: 10px -20px 0;
-    font-size: 16px;
-}
-
-.smileRow {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.smileCol {
-  display: flex;
-  align-items: center;
-  margin: 0 50px 20px 0;
-}
-
-.smileCol img {
-  height: 44px;
-  margin: 0 10px 0 0;
-}
-
-.smileCol small {
-  color: #C00;
-}
-
-.guaranted {
-  color: #000;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 18px;
-  margin: 10px 0 0;
-}
-
-.smileColRight {
-  position: relative;
-  top: 8px;
-}
-
-.smileColRight .thumb {
-  display: flex;
-}
-
-.smileColRight .thumb figure {
-  width: 30px;
-}
-
-.checkoutHeader {
-  margin: 0 0 40px;
-  display: block;
-  width: 100%;
-  position: relative;
-  z-index: 99;
-  padding: 15px;
-  background: #FFFBF4;
-  box-shadow: 0px 3px 6px #00000029;
+  height: 100%;
 }
 
 @media screen and (max-width: 1320px) {}
 
 @media screen and (max-width: 1200px) {
   .container {
-    padding: 30px 30px;
+    padding: 10px 30px;
   }
 }
 
@@ -1137,10 +840,5 @@ input[type="checkbox"] {
 
   .newsletter {
     margin: 20px 0 0;
-  }
-  
-
-  .smallThumbnails {
-    width: 100%;
   }
 }
